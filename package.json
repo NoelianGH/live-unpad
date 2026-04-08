@@ -1,0 +1,21 @@
+{
+  "name": "live-unpad",
+  "version": "1.0.0",
+  "description": "LiveUnpad - Live Event Management Platform",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && cd liveunpad-api && npm install && npx prisma generate && cd ../liveunpad-app && npm install"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "prisma",
+    "event-management",
+    "live-events"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

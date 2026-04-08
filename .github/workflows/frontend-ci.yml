@@ -1,0 +1,46 @@
+name: CI - Frontend
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'liveunpad-app/**'
+      - '.github/workflows/frontend-ci.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'liveunpad-app/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: liveunpad-app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: liveunpad-app
+        run: npm ci
+
+      - name: Lint
+        working-directory: liveunpad-app
+        run: npm run lint
+
+      - name: Build
+        working-directory: liveunpad-app
+        run: npm run build
+
+      - name: Run tests
+        working-directory: liveunpad-app
+        run: npm test
