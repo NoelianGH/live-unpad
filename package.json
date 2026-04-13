@@ -1,21 +1,28 @@
 {
   "name": "live-unpad",
   "version": "1.0.0",
-  "description": "LiveUnpad - Live Event Management Platform",
   "private": true,
   "scripts": {
-    "setup": "npm install && cd liveunpad-api && npm install && npx prisma generate && cd ../liveunpad-app && npm install"
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
   },
-  "keywords": [
-    "nextjs",
-    "react",
-    "prisma",
-    "event-management",
-    "live-events"
-  ],
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoelianGH/live-unpad.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.0.0"
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NoelianGH/live-unpad/issues"
+  },
+  "homepage": "https://github.com/NoelianGH/live-unpad#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
