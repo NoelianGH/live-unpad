@@ -1,84 +1,66 @@
-'use client';
+"use client";
+
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function RegisterPage() {
-  const router = useRouter();
-  const [form, setForm] = useState({ name: '', email: '', password: '' });
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleSubmit = async () => {
-    setLoading(true);
-    setError('');
-    try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Registrasi gagal');
-      router.push('/login');
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Register submitted", { name, email, password });
+    // Add your registration logic here
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-semibold text-center mb-2">Daftar Akun</h1>
-        <p className="text-center text-gray-500 text-sm mb-6">Chatbot Magister Ilmu Manajemen</p>
-
-        {error && <div className="bg-red-50 text-red-600 text-sm p-3 rounded-lg mb-4">{error}</div>}
-
-        <div className="space-y-4">
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md border-t-4 border-amber-600">
+        <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Daftar Akun Baru</h1>
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+            <label className="block text-sm font-medium text-gray-700">Nama Lengkap</label>
             <input
               type="text"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Nama Anda"
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="mt-1 w-full p-2 border border-gray-300 rounded focus:ring-amber-500 focus:border-amber-500"
+              required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <label className="block text-sm font-medium text-gray-700">Email</label>
             <input
               type="email"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="email@example.com"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="mt-1 w-full p-2 border border-gray-300 rounded focus:ring-amber-500 focus:border-amber-500"
+              required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <label className="block text-sm font-medium text-gray-700">Password</label>
             <input
               type="password"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Min. 8 karakter"
-              value={form.password}
-              onChange={(e) => setForm({ ...form, password: e.target.value })}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="mt-1 w-full p-2 border border-gray-300 rounded focus:ring-amber-500 focus:border-amber-500"
+              required
             />
           </div>
           <button
-            onClick={handleSubmit}
-            disabled={loading}
-            className="w-full bg-blue-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50 transition"
+            type="submit"
+            className="w-full bg-amber-600 text-white py-2 rounded font-semibold hover:bg-amber-700 transition"
           >
-            {loading ? 'Memproses...' : 'Daftar'}
+            Daftar
           </button>
-        </div>
-
-        <p className="text-center text-sm text-gray-500 mt-4">
+        </form>
+        <p className="mt-4 text-center text-sm text-gray-600">
           Sudah punya akun?{' '}
-          <Link href="/login" className="text-blue-600 hover:underline">Masuk</Link>
+          <Link href="/auth/login" className="text-amber-600 hover:underline">
+            Login di sini
+          </Link>
         </p>
       </div>
     </div>
