@@ -8,10 +8,22 @@ export default function RegisterPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Register submitted", { name, email, password });
-    // Add your registration logic here
+    try {
+      const res = await fetch("http://localhost:5000/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, password }),
+      });
+      const data = await res.json();
+      console.log(data);
+      // Handle success
+    } catch (error) {
+      console.error("Register failed", error);
+    }
   };
 
   return (

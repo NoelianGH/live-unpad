@@ -1,0 +1,194 @@
+Pendahuluan
+LMS (Learning Management System) adalah sebuah platform berbasis teknologi yang digunakan untuk mengelola, mendistribusikan, dan memantau kegiatan pembelajaran secara online. LMS memungkinkan penyampaian materi ajar, interaksi antara pengajar dan peserta didik, serta penilaian dan evaluasi pembelajaran melalui internet. Learning Management System (LMS) yang digunakan di Unpad bernama LiVE Unpad yang dapat diakses di https://live.unpad.ac.id. LMS LiVE Unpad dapat diakses menggunakan beberapa web browser, seperti Google Chrome, Mozilla Firefox, Internet Explorer, Safari, dan lain-lain.
+
+Tujuan Penggunaan LMS:
+1. Memfasilitasi Pembelajaran Jarak Jauh, LMS memungkinkan pembelajaran dilakukan secara online tanpa harus hadir di ruang kelas, memudahkan proses pendidikan untuk siswa di berbagai lokasi; 
+2. Meningkatkan Aksesibilitas, Dengan LMS, materi pembelajaran dapat diakses kapan saja dan di mana saja, memungkinkan peserta didik untuk belajar dengan kecepatan mereka sendiri;
+3. Pengelolaan Pembelajaran yang Efisien, Pengajar dapat mengorganisir dan mengelola materi, ujian, dan tugas secara lebih terstruktur dan efisien; 
+4. Pengembangan Konten Digital, Pengajar dapat membuat konten yang beragam, mulai dari modul teks, video, kuis, dan materi lainnya yang bisa diakses oleh peserta didik; serta 
+5. Evaluasi dan Pelaporan yang Lebih Baik, LMS memudahkan pengelolaan penilaian dan pelaporan hasil belajar peserta didik, memberikan pengajar gambaran yang jelas mengenai perkembangan siswa.
+
+Manfaat Penggunaan LMS 
+1. Fleksibilitas Waktu dan Lokasi: Peserta didik dapat mengakses materi pembelajaran kapan saja dan dari mana saja, tanpa terikat jadwal kelas fisik. 
+2. Interaksi dengan Pengajar dan Teman Sejawat: LMS memungkinkan peserta didik untuk berkomunikasi dengan pengajar melalui forum diskusi, pesan, dan kegiatan kolaboratif lainnya.
+3. Pemantauan Kemajuan: Peserta didik dapat memantau kemajuan belajar mereka, seperti nilai kuis, tugas, dan pencapaian dalam kursus.
+
+Panduan Registrasi LMS LiVE Unpad
+Learning Management System (LMS) LiVE Unpad merupakan sistem pengelolaan belajar daring di lingkungan Universitas Padjadjaran. LMS LiVE Unpad dirancang untuk memfasilitasi beragam kebutuhan blended learning civitas akademika Universitas Padjadjaran dan program-program terkait Kampus Merdeka dengan credit transfer (Degree). Silakan akses LMS LiVE Unpad di https://live.unpad.ac.id. Pembelajaran di Unpad menerapkan Blended Learning, sehingga mahasiswa harus bisa mengakses LMS LiVE Unpad sebagai platform elearning di Universitas Padjadjaran.
+
+Cara registrasi pengguna baru di LMS LiVE Unpad, yaitu: Syarat registrasi di antaranya yaitu: 
+1. terdaftar sebagai dosen atau mahasiswa Unpad; 
+2. bagi dosen, harus memiliki NIP/NIDK; 
+3. bagi mahasiswa, harus memiliki NPM; 
+4. telah mengaktifkan PAUS-ID dan Email Unpad (domain@unpad.ac.id); 
+5. khusus bagi mahasiswa program Kampus Merdeka dan program lain yang terkait, anda akan mendapatkan PAUS-ID dan Email Unpad pada saat pendaftaran.
+
+Berikut merupakan tahapan registrasi LMS LiVE Unpad, yaitu: 
+1. Masuk ke laman LMS LiVE Unpad dan ketik https://live.unpad.ac.id.
+2. "Register with PAUS ID" dan klik "Daftar PAUS-ID".
+3. Sign in PAUS-ID
+4. Otorisasi Aplikasi.
+5. Pendaftaran berhasil.
+6. Log in kembali ke LMS LiVE Unpad dengan menggunakan PAUS-ID.
+7. Rekan Mahasiswa akan otomatis masuk ke dashboard.
+8. Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: Cara Login LiVE Unpad untuk Mahasiswa
+
+Jika anda masih terkendala dengan Live Unpad, silahkan mengisi link Google Form berikut:
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog"
+   target="_blank"
+   style="color: #007bff; text-decoration: underline;">
+   Gform Kendala LIVE Unpad
+</a>.
+
+Halaman Dashboard LiVE Unpad
+Setelah melakukan log in ke LiVE Unpad, maka Rekan Mahasiswa akan menemukan halaman dashboard. Pada halaman dashboard terdapat beberapa bagian antara lain:
+1. Site Home, Halaman utama dari LiVE Unpad. Di sini, Rekan Mahasiswa bisa mengakses berbagai menu dan informasi utama terkait aktivitas perkuliahan di platform.
+2. Toggle My Courses (Overview), Fitur ini menampilkan daftar kursus yang sedang atau telah diikuti oleh pengguna, memberikan gambaran umum terkait kegiatan akademik mereka.
+3. Dashboard, Halaman ini memberikan ikhtisar aktivitas pengguna, termasuk kursus yang diambil, update terbaru, pengumuman, dan aktivitas terkait lainnya.
+4. My Courses, Halaman ini digunakan untuk mengakses kursus yang diikuti oleh pengguna. Kursus tersebut dibagi menjadi beberapa kategori: 1. All → untuk semua kursus yang diikuti, sedang diikuti, dan telah diikuti. 2. In progress → untuk kursus yang sedang berlangsung. 3. Future → untuk kursus yang belum dimulai. 4. Past → untuk kursus yang telah berlalu. 
+5. Home, Halaman utama dari LiVE Unpad, sering kali digunakan sebagai tempat untuk kembali ke tampilan utama platform. 
+6. Calendar, Kalender yang menampilkan tanggal-tanggal penting seperti tenggat waktu pengumpulan tugas atau ujian.
+7. Participants, Menampilkan daftar peserta dalam kursus, memungkinkan pengguna untuk berinteraksi dengan peserta lain yang terdaftar.
+8. Question Bank, Menyediakan bank soal atau pertanyaan yang dapat diakses oleh pengguna dalam konteks kursus. 
+9. Content Bank, Merupakan tempat penyimpanan berbagai materi pembelajaran yang dapat diakses oleh pengguna. 
+10. Search Bar, Fitur pencarian untuk mencari kursus, materi, atau peserta di dalam LiVE Unpad. 
+11. Light/Dark Mode, Light/Dark Mode digunakan untuk mengganti tampilan LiVE Unpad menjadi mode terang atau gelap. 
+12. Notification, Fitur yang menampilkan pemberitahuan mengenai aktivitas terkait kursus yang diikuti, seperti pengumuman, pembaruan, atau perubahan jadwal.
+13. Message, Digunakan untuk mengirim pesan antar pengguna yang berada dalam kursus yang sama, memungkinkan komunikasi langsung. 
+14. My Profile, Halaman untuk melihat dan mengedit profil akun pengguna, seperti informasi pribadi, gambar profil, atau pengaturan lainnya.
+15. Block Drawer, Menampilkan berbagai elemen atau blok yang dapat disesuaikan oleh pengguna sesuai kebutuhan.
+16. Upcoming Events, Menampilkan daftar acara atau kegiatan yang akan datang yang dapat diikuti oleh civitas akademika Unpad. 
+17. Available Courses, Menampilkan daftar kursus yang tersedia untuk diikuti, memungkinkan pengguna untuk mendaftar kursus yang sesuai dengan minat atau kebutuhan akademik mereka.
+18. Menu Layanan Akademik Unpad, Pada menu ini, Rekan Mahasiswa dapat menemukan berbagai layanan yang ditawarkan Unpad, seperti UNPAD Luhung, Global Learning, Digital Library Kandaga, dan Pendidikan Jarak Jauh dengan model Hi-Flex. 
+19. Menu Layanan Kemahasiswaan Unpad, Pada menu ini, Rekan Mahasiswa dapat menemukan layanan yang bisa dimanfaatkan, seperti konsultasi, pelatihan, TPB/OKK, dan informasi panduan LiVE.
+20. Menu informasi Unpad, Pada menu ini, Rekan Mahasiswa dapat menemukan berbagai informasi seputar Unpad yang dapat diakses melalui Warta Unpad, My Live at Unpad, Informasi Mata Kuliah, dan Beranda Fakultas. 
+21. Kontak Helpdesk LiVE Unpad, Pada menu ini, Rekan Mahasiswa dapat menghubungi helpdesk LiVE Unpad apabila menemukan kendala terkait penggunaan LiVE Unpad.
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=irF80HdYiVg.
+
+Panduan Mengubah Profil pada LiVE Unpad 
+1. Pilih menu "My Profile Setting" > "Edit Profile" pada panel Setting yang berada di sebelah kanan atas.
+2. Selanjutnya akan muncul tampilan untuk di layout "Edit Profile".
+3. Beberapa isian yang disarankan untuk diubah pada saat pertama kali log in yaitu (1) "Description", (2) "User Picture" (Foto Profil), dan beberapa isian pada panel (3) "Optional" yang menunjukkan kontak Rekan Mahasiswa. Untuk menambahkan foto profil silahkan klik "Add (2)" pada panel "New Picture". 
+4. Selanjutnya, akan muncul tampilan "File picker". Pastikan berada pada tab "Upload a file", kemudian klik "Browse" untuk memilih foto/gambar yang terdapat pada media penyimpanan Rekan Mahasiswa. Setelah dipilih, klik "Upload this file".
+5. Mengunggah foto/gambar juga dapat dilakukan dengan hanya melakukan "Drag and Drop" file dari media penyimpanan langsung ke area yang disediakan untuk melakukan "Drag and Drop" yang berwarna biru pada "Form Ubah Profil" di atas.
+6. Setelah selesai mengubah/mengisi field yang dikira perlu, silakan klik "Update profile" pada bagian bawah dari formulir ubah profil.
+
+Panduan Masuk Course Melalui Student Unpad 
+1. Untuk masuk ke course mata kuliah melalui https://students.unpad.ac.id/ mahasiswa harus masuk terlebih dahulu ke laman Student Portal dengan cara log in atau masuk melalui PAUS-ID.
+2. Selanjutnya mahasiswa dapat mengklik pada bagian "Akademik" kemudian klik "Kegiatan Perkuliahan"
+3. Apabila telah muncul laman seperti ini klik pada bagian "Perkuliahan & Presensi".
+4. Selanjutnya, setelah muncul laman seperti ini, terdapat 2 (dua) opsi yang dapat dilakukan oleh mahasiswa untuk masuk ke dalam course perkuliahan:
+a. Opsi 1: Jika, mahasiswa baru akan masuk ke course mahasiswa dapat masuk dengan klik pada bagian "Detail". Selanjutnya jika telah muncul tampilan seperti ini, mahasiswa dapat mengklik "Enroll / join". Jika sudah mahasiswa akan mendapatkan notifikasi pemberitahuan telah berhasil enroll ke dalam course mata kuliah.
+Selanjutnya mahasiswa dapat mengklik "Link E-Learning" untuk masuk ke course mata kuliah, jika sudah muncul tampilan seperti ini pada bagian Self enrolment Student klik "Continue".
+Selanjutnya pada bagian ini mahasiswa akan diarahkan 5 untuk log in melalui PAUS-ID ke Course mata kuliah. Setelah itu mahasiswa akan otomatis masuk ke laman Course.
+
+b. Opsi 2: Jika, mahasiswa sudah melakukan enroll ke course mata kuliah. Maka mahasiswa dapat mengklik ikon link untuk otomatis masuk ke course mata kuliah secara lebih mudah.
+Keterangan: Mahasiswa harus register dulu ke PAUS-ID untuk bisa enroll ke LiVE Unpad melalui https://students.unpad.ac.id/.
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=Sgsqx4XvdwM.
+
+Pengelolaan Course
+
+1.1 Cara Melakukan Submit Assignment/Tugas
+1. Masuk ke course dan temukan penugasan.
+2. Klik penugasan tersebut dan Rekan Mahasiswa akan menemukan tampilannya dan Selanjutnya, buka tampilan "Add Submission".
+3. Rekan Mahasiswa akan melihat tampilan muncul. Pilih tugas berupa file yang akan di-submit. Lalu jika sudah, klik "Upload this file".
+4. Jika file sudah diunggah, maka Rekan Mahasiswa akan beralih ke tampilan berikutnya. Jika pada layar terlihat bahwa "Submission status" dan "Time Remaining" masih berwarna kuning, silakan Rekan Mahasiswa klik menu "Submit Assignment" untuk mengumpulkan tugas agar masuk ke laman penilaian dosen. Karena jika masih menampilkan warna kuning, maka hal tersebut menandakan bahwa tugas belum terekam di dalam sistem LiVE Unpad.
+5. Jika tampilan sudah berubah menjadi berwarna hijau, maka hal tersebut menandakan bahwa tugas sudah terekam di dalam sistem LiVE Unpad.
+Keterangan:
+Terdapat dua pilihan yang dapat dipilih oleh dosen dalam membuat penugasan. Pilihan pertama, tugas dapat langsung ter-submit dengan tampilan yang berwarna hijau. Sementara pilihan kedua, mahasiswa harus melakukan klik menu "Submit Assignment" terlebih dahulu agar tugas dapat terekam. Oleh karena itu, Rekan Mahasiswa harus cermat ya sebelum mengumpulkan tugas!.
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=4l4m6tTkLZQ.
+
+1.2 Cara Menambahkan Discussion dalam Forum Discussion
+1. Masuk ke course dan temukan forum diskusi.
+2. Pilih forum diskusi sesuai dengan topik yang sedang dipelajari.
+3. Klik tombol "Reply" untuk menambahkan diskusi terhadap topik yang sedang dipelajari.
+4. Jika sudah menambahkan diskusi, maka klik "Submit". Rekan Mahasiswa dapat memilih untuk menampilkan diskusi secara publik atau mengaktifkan balasan secara privat dengan melakukan klik pada tombol switch "Reply Privately".
+5. Setelah selesai menulis diskusi dan melakukan submit, maka akan muncul tampilan diskusinya. 
+6. Untuk tampilan diskusi publik, dia akan terbaca okeh semua orang.
+7. Untuk tampilan diskusi privat, dia akan ada tanda bahwa ini adalah diskusi privat(this is a private reply).
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=ArRW0V_EkM0.
+
+1.3 Cara Menambahkan Chat
+1. Masuk ke course dan temukan forum diskusi
+2. Rekan Mahasiswa akan menemukan tampilan seperti ada tulisan kuning "Enter the chat". Selanjutnya klik "Enter the chat" dan tulis chat yang akan ditunjukkan ke forum
+3. Rekan Mahasiswa dapat menambahkan chat sesuai dengan topik yang sudah ditentukan. Setelahnya Civitas dapat klik "Send" dan chat sudah ditambahkan ke forum.
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=rO0-1F-C5gQ
+
+1.4 Cara Mengaktifkan Safe Exam Browser (SEB)
+1. Pengertian Safe Exam Browser (SEB)
+Safe Exam Browser (SEB) adalah aplikasi yang digunakan untuk mengunci perangkat peserta ujian agar mereka hanya bisa mengakses LiVE Unpad dan tidak bisa membuka aplikasi lain saat mengikuti kuis atau ujian. SEB dapat meningkatkan keamanan ujian online.
+
+2. Fungsi SEB di LiVE Unpad
+LiVE Unpad dapat mengatur agar kuis hanya bisa diakses melalui SEB. Saat pengaturan ini diaktifkan:
+- Ujian hanya bisa dibuka melalui aplikasi SEB.
+- Akses ke aplikasi lain (misal browser lain, seperti catatan, WhatsApp, dll) akan diblokir.
+- SEB bisa dikonfigurasi untuk mengizinkan atau memblokir aplikasi tertentu.
+
+3. Langkah melakukan ujian dengan menggunakan Safe Exam Browser (SEB)
+- Rekan Mahasiswa masuk ke course yang tersedia di LiVE Unpad dan memilih ujian yang akan diikuti.
+- Setelah mengklik ujian, akan muncul dua opsi yaitu Download Safe Exam Browser (SEB) dan Launch Safe Exam Browser (SEB).
+- Jika belum memiliki SEB, Rekan Mahasiswa perlu mengunduh terlebih dahulu melalui opsi yang tersedia, disesuaikan dengan sistem operasi perangkat (Windows/macOS).
+- Lakukan instalasi Safe Exam Browser seperti proses instalasi aplikasi pada umumnya.
+- Setelah SEB terinstal, klik tombol "Launch Safe Exam Browser" pada halaman Moodle. SEB akan terbuka secara otomatis dan memuat file konfigurasi dari ujian yang bersangkutan.
+- Setelah file konfigurasi termuat, SEB akan membuka halaman ujian dengan pengaturan yang telah ditentukan oleh pengelola ujian.
+- Perhatikan Batasan Selama Ujian yaitu Tidak bisa membuka tab atau aplikasi lain selama ujian berlangsung, Akses internet dibatasi sesuai pengaturan URL filtering (whitelist/blacklist), Jangan mencoba keluar atau memodifikasi pengaturan SEB. Jika SEB ditutup, sistem akan meminta konfirmasi, Jika halaman tampak tidak responsif atau loading terlalu lama, klik tombol "Reload" di pojok kiri atas layar SEB.
+- Jika telah menyelesaikan Ujian, maka pastikan untuk Klik tombol Submit sesuai dengan instruksi dosen, Klik tombol "Matikan SEB" (biasanya terletak di pojok kanan atas) untuk keluar dari aplikasi, Waktu ujian yang tersisa akan ditampilkan pada taskbar SEB, sehingga Rekan Mahasiswa dapat memantau dan mengatur waktu pengerjaan dengan baik.
+
+1.5 Cara Mengerjakan Kuis
+1. Masuk ke laman kuis, lalu klik "Attempt Quiz".
+2. Rekan Mahasiswa dapat langsung mengerjakan kuis. Di laman kuis, Rekan Mahasiswa akan menemukan beberapa hal. Berikut merupakan keterangan lebih lanjut dari laman kuis: Flag Question: Digunakan untuk menandai soal yang ingin diperiksa lagi nanti, Marked Out: Menunjukkan bobot penilaian dari setiap soal yang diisi, Clear my choice: Digunakan untuk menghapus jawaban yang sudah dipilih, jika Rekan Mahasiswa ingin menggantinya dengan jawaban lain, Next Page: Tombol untuk melanjutkan ke halaman soal berikutnya dalam kuis yang terdiri dari beberapa halaman.
+3. Jika Civitas sudah selesai mengisi jawaban, maka dapat melakukan klik "Finish Attempt" untuk menyelesaikan kuis.
+4. Setelah melakukan "Finish Attempt", maka akan muncul tampilan yang menandakan butir soal yang sudah terisi dan belum. Rekan Mahasiswa dapat memeriksa kembali soal mana saja yang belum terisi.
+5. Jika sudah selesai melakukan tinjauan ulang setiap tugas, maka Rekan Mahasiswa dapat mengklik "Submit all and finish" jika sudah finalisasi terkait jawaban kuis. Namun, jika masih ada jawaban yang ragu dan ingin mengulang kembali, maka Rekan Mahasiswa dapat melakukan klik "Return to attempt".
+6. Tampilan ketika sudah selesai Attempt maka akan tertera status, started, completed, duration, marks, dan grade. Rekan Mahasiswa dapat melihat durasi pengerjaan termasuk nilai yang diraih setelah pelaksanaan kuis.
+Keterangan:
+Setiap kuis memiliki pengaturan yang berbeda-beda sesuai dengan keinginan dosen atau pengelola kuis. Dalam beberapa kuis, dosen memperbolehkan mahasiswa untuk mengerjakan kuis beberapa kali. Namun, ada juga kuis yang hanya memungkinkan satu kali percobaan. Selain itu, tidak semua kuis menampilkan nilai secara langsung.
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=XECgi4NHlpI.
+
+1.6 Cara Melakukan Submit Video Panopto ke dalam LiVE
+1. Masuk ke course dan temukan forum diskusi.
+2. Rekan Mahasiswa akan menuju pop-up tampilannya. Selanjutnya, Rekan Mahasiswa dapat menambahkan video dengan klik "Add Panopto Submission".
+3. Selanjutnya, Rekan Mahasiswa akan diarahkan ke laman yaitu "Select Panopto Submission".
+Terdapat beberapa pilihan yang dapat dipilih oleh Rekan Mahasiswa ketika akan melakukan submit video di antaranya yaitu:
+- Civitas dapat memilih video dengan masuk ke website Panopto terlebih dahulu dan melakukan integrasi antara Panopto dengan LiVE Unpad dengan sign in melalui Moodle - LiVE Unpad.
+- Rekan Mahasiswa dapat melakukan pengunggahan video dengan menambahkannya dari local drive yang dimiliki oleh device masing-masing.
+- Rekan Mahasiswa dapat melakukan record langsung di website LiVE Unpad.
+4. Jika sudah memilih salah satu video, maka akan muncul tampilan fiksasinya yaitu tombol "Replace" dan "Submit". Selanjutnya klik "Submit" untuk mengumpulkan video.
+5. Setelah video ter-submit, maka akan muncul tampilan "Succes, your assignment has been submitted". Selanjutnya, Rekan Mahasiswa dapat menunggu hingga muncul penilaian oleh dosen.
+Penjelasan lebih lanjut dapat disaksikan pada tautan YouTube berikut: https://www.youtube.com/watch?v=ZURexVpwWG0.
+
+Live Unpad Versi Mobile
+Rekan Civitas Unpad bisa mendownload Aplikasi Live Unpad Mobile baik di App Store maupun Play Store.
+
+1.1 Cara Login melalui LiVE Unpad Mobile
+1. Masuk pada aplikasi Live Unpad Mobile. Kemudian akan muncul pop-up akses notifikasi yang nantinya akan muncul notifikasi informasi terkini yang ada di Live Unpad Mobile.
+2. Jika rekan Mahasiswa mengaktifkan fitur akses notifikasi maka setiap adanya informasi terbaru mengenai kegiatan setiap course akan muncul tampilan notifikasi di hp rekan mahasiswa.
+3. Klik "Masuk Log" untuk Login melalui LiVE Unpad Mobile. Civitas akan dialihkan ke halaman web kemudian civitas dapat klik "Register with PAUS ID" dan klik "Daftar PAUS-ID".
+4. Maka akan ada Otorisasi Aplikasi, lalu pendaftaran berhasil.
+5. Log in kembali ke LMS LiVE Unpad dengan menggunakan PAUS-ID.
+6. Setelah berhasil Log in Civitas akan diarahkan untuk mengikuti tutorial singkat yang civitas dapat cermati dan pahami.
+
+1.2 Halaman Dashboard LiVE Unpad Mobile
+Setelah melakukan log in ke LiVE Unpad, maka Rekan Mahasiswa akan menemukan halaman dashboard. Pada halaman dashboard terdapat beberapa bagian antara lain:
+1. My Courses, Halaman ini digunakan untuk mengakses kursus yang diikuti oleh pengguna.
+2. Calendar, Kalender yang menampilkan tanggal-tanggal penting seperti tenggat waktu pengumpulan tugas atau ujian.
+3. More, Kalender yang menampilkan App setting, yang terdiri dari General, Space usage, Synchronisation, dan About.
+4. Toggle My Courses (Overview), Fitur ini menampilkan daftar kursus yang sedang atau telah diikuti oleh pengguna, memberikan gambaran umum terkait kegiatan akademik mereka.
+5. My Profile, Halaman untuk melihat dan mengedit profil akun pengguna, seperti informasi pribadi, gambar profil, atau pengaturan lainnya.
+
+1.3 Cara Melakukan Submit Assignment/Tugas di LiVE Unpad Mobile
+1. Masuk ke course dan temukan penugasan yang tertera.
+2. Klik penugasan tersebut dan Rekan Mahasiswa akan menemukan tampilan penugasannya. Selanjutnya, buka tampilan "Kirimkan Pengajuan (Tugas/Laporan)". Namun, sebelum melakukan pengumpulan tugas pastikan memperhatikan waktu pengumpulannya.
+3. Rekan Mahasiswa akan menemukan tampilan berikutnya. Klik tanda tambah pada option "File terlampir". Kemudian Civitas dapat menyesuaikan bentuk tugas berupa file yang akan di-submit dan pastikan menyesuaikan jenis dokumen tugas sesuai dengan ketentuan atau arahan dosen.
+4. Jika file sudah diunggah, maka Rekan Mahasiswa akan menemukan tampilan file yang di unggah. Klik "Simpan" pada bagian kanan atas. Kemudian akan muncul pop up tulisan "Anda yakin?" pada tampilan yang berguna sebagai reminder apakah tugas yang sudah diunggah sudah sesuai dengan ketentuan, Rekan Mahasiswa dapat Klik "Ok" untuk mengunggah tugas.
+5. Jika tampilan pada "status pengiriman" sudah berubah menjadi berwarna hijau, maka hal tersebut menandakan bahwa tugas sudah terekam di dalam sistem LiVE Unpad.
+
+1.4 Cara Mengerjakan Kuis di LiVE Unpad Mobile
+1. Masuk ke course dan temukan quiz yang Rekan Mahasiswa harus kerjakan, kemudian klik "Go to activity".
+2. Setelah itu Rekan Mahasiswa akan menemukan tampilan seperti "Start attempt". Klik "Start attempt" untuk memulai quiz.
+3. Rekan Mahasiswa dapat langsung mengerjakan kuis. Di laman kuis, Rekan Mahasiswa akan menemukan beberapa hal. Berikut merupakan keterangan lebih lanjut dari laman kuis:
+- Time Left: Menunjukan waktu pengerjaan yang berjalan mundur.
+- Marked Out: Menunjukkan bobot penilaian dari setiap soal yang diisi.
+- Clear my choice: Digunakan untuk menghapus jawaban yang sudah dipilih, jika Rekan Mahasiswa ingin menggantinya dengan jawaban lain.
+- Next Page: Tombol untuk melanjutkan ke halaman soal berikutnya dalam kuis yang terdiri dari beberapa halaman.
+4. Setelah menyelesaikan kuis, maka akan muncul tampilan "Summary of attempt" yang menandakan butir soal yang sudah terisi dan belum. Rekan Mahasiswa dapat memeriksa kembali soal mana saja yang belum terisi. Namun, jika sudah selesai dan yakin, rekan mahasiswa dapat Klik "Submit all and finish".

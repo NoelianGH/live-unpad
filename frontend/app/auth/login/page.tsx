@@ -7,10 +7,22 @@ export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login submitted", { email, password });
-    // Add your authentication logic here (e.g., next-auth, firebase, supabase)
+    try {
+      const res = await fetch("http://localhost:5000/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await res.json();
+      console.log(data);
+      // Handle success, e.g., redirect or store token
+    } catch (error) {
+      console.error("Login failed", error);
+    }
   };
 
   return (

@@ -6,17 +6,22 @@ import { createRequire } from 'module';
 import chatbotRoutes from './routes/chatbotRoutes.js';
 import { connectDB } from './config/db.js';
 import { disconnectDB } from './config/db.js';
-
+import authRoutes from './routes/authRoutes.js'
+import { register } from './controllers/authControllers.js';
 config();
 connectDB();
 
 const require = createRequire(import.meta.url);
 const swaggerFile = require('../swagger-output.json'); // ✅ auto-generated file
 
+import cors from 'cors';
+
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use("/chatbot", chatbotRoutes);
+app.use("/auth", authRoutes);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
