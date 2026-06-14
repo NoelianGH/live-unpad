@@ -1,37 +1,59 @@
-const express = require('express');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+import express from 'express';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import { prisma } from '../services/prisma.js';
+
 const router = express.Router();
 
 router.post('/register', async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const exists = await User.findOne({ email });
-    if (exists) return res.status(400).json({ message: 'Email sudah terdaftar' });
+    if (!email || !password) {
+      return res.status(400).json({ error: 'Email dan password wajib diisi' });
+    }
+
+    const normalizedEmail = email.toLowerCase().trim();
+    const exists = await prisma.user.findUnique({ where: { email: normalizedEmail } });
+    if (exists) return res.status(400).json({ error: 'Email sudah terdaftar' });
 
     const hashed = await bcrypt.hash(password, 10);
-    const user = await User.create({ name, email, password: hashed });
+    await prisma.user.create({
+      data: {
+        name: name ? name.trim() : '',
+        email: normalizedEmail,
+        password: hashed,
+        role: 'user'
+      }
+    });
+
     res.status(201).json({ message: 'Registrasi berhasil' });
   } catch (err) {
-    res.status(500).json({ message: 'Server error' });
+    console.error('❌ [Register] Error:', err);
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await User.findOne({ email });
-    if (!user) return res.status(400).json({ message: 'Email tidak ditemukan' });
+    if (!email || !password) {
+      return res.status(400).json({ error: 'Email dan password wajib diisi' });
+    }
+
+    const normalizedEmail = email.toLowerCase().trim();
+    const user = await prisma.user.findUnique({ where: { email: normalizedEmail } });
+    if (!user) return res.status(400).json({ error: 'Email tidak ditemukan' });
 
     const match = await bcrypt.compare(password, user.password);
-    if (!match) return res.status(400).json({ message: 'Password salah' });
+    if (!match) return res.status(400).json({ error: 'Password salah' });
 
-    const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, { expiresIn: '7d' });
+    // Use userId consistently in the payload to match authMiddleware.js
+    const token = jwt.sign({ userId: user.id, role: user.role }, process.env.JWT_SECRET, { expiresIn: '7d' });
     res.json({ token, role: user.role });
   } catch (err) {
-    res.status(500).json({ message: 'Server error' });
+    console.error('❌ [Login] Error:', err);
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
-module.exports = router;
+export default router;

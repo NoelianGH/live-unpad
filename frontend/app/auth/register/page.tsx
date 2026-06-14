@@ -20,7 +20,7 @@ export default function RegisterPage() {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || 'Registrasi gagal');
-      router.push('/login');
+      router.push('/auth/login');
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -29,10 +29,10 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 font-sans">
       <div className="bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-semibold text-center mb-2">Daftar Akun</h1>
-        <p className="text-center text-gray-500 text-sm mb-6">Chatbot Magister Ilmu Manajemen</p>
+        <h1 className="text-2xl font-semibold text-center mb-2 text-gray-900">Daftar Akun</h1>
+        <p className="text-center text-gray-500 text-sm mb-6">Chatbot LiVE Unpad</p>
 
         {error && <div className="bg-red-50 text-red-600 text-sm p-3 rounded-lg mb-4">{error}</div>}
 
@@ -41,7 +41,7 @@ export default function RegisterPage() {
             <label className="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
             <input
               type="text"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-950 bg-white"
               placeholder="Nama Anda"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -51,7 +51,7 @@ export default function RegisterPage() {
             <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
             <input
               type="email"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-950 bg-white"
               placeholder="email@example.com"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -61,7 +61,7 @@ export default function RegisterPage() {
             <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
             <input
               type="password"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-950 bg-white"
               placeholder="Min. 8 karakter"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
@@ -70,7 +70,7 @@ export default function RegisterPage() {
           <button
             onClick={handleSubmit}
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50 transition"
+            className="w-full bg-yellow-400 text-gray-900 py-2 rounded-lg text-sm font-medium hover:bg-yellow-500 disabled:opacity-50 transition"
           >
             {loading ? 'Memproses...' : 'Daftar'}
           </button>
@@ -78,7 +78,7 @@ export default function RegisterPage() {
 
         <p className="text-center text-sm text-gray-500 mt-4">
           Sudah punya akun?{' '}
-          <Link href="/login" className="text-blue-600 hover:underline">Masuk</Link>
+          <Link href="/auth/login" className="text-yellow-500 hover:underline">Masuk</Link>
         </p>
       </div>
     </div>

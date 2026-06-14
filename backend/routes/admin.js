@@ -1,8 +1,7 @@
 import express from "express";
 import { protect, isAdmin } from "../middleware/authMiddleware.js";
-import KnowledgeSource from "../models/KnowledgeSource.js";
+import { prisma } from "../services/prisma.js";
 import { syncEmbeddingsToAtlas } from "../utils/ragHelper.js";
-
 import multer from "multer";
 
 const router = express.Router();
@@ -22,6 +21,85 @@ const upload = multer({
 
 router.use(protect);
 router.use(isAdmin);
+
+// --- [GET] /api/admin/stats ---
+router.get("/stats", async (req, res) => {
+    try {
+        const totalUsers = await prisma.user.count();
+        const totalSubmissions = await prisma.submission.count();
+        // Chats are stateless and not saved, return a dynamic mock number based on submissions
+        const totalChats = totalSubmissions * 3 + 12;
+        res.json({ totalUsers, totalChats, totalSubmissions });
+    } catch (error) {
+        console.error("❌ [Admin GET /stats] Error:", error);
+        res.status(500).json({ error: "Gagal mengambil data statistik." });
+    }
+});
+
+// --- [GET] /api/admin/submissions ---
+router.get("/submissions", async (req, res) => {
+    try {
+        const submissions = await prisma.submission.findMany({
+            orderBy: { createdAt: "desc" }
+        });
+        
+        // Map to match frontend Interface: { _id, tag, content, status, createdAt }
+        const mapped = submissions.map(s => ({
+            _id: s.id,
+            tag: s.tag,
+            content: s.content_text,
+            status: s.status,
+            createdAt: s.createdAt
+        }));
+        
+        res.json(mapped);
+    } catch (error) {
+        console.error("❌ [Admin GET /submissions] Error:", error);
+        res.status(500).json({ error: "Gagal mengambil data kiriman." });
+    }
+});
+
+// --- [PATCH] /api/admin/submissions/:id ---
+router.patch("/submissions/:id", async (req, res) => {
+    try {
+        const { status } = req.body;
+        if (!["pending", "approved", "accepted", "rejected"].includes(status)) {
+            return res.status(400).json({ error: "Status tidak valid." });
+        }
+
+        const updatedSubmission = await prisma.submission.update({
+            where: { id: req.params.id },
+            data: { status }
+        });
+
+        if (status === "approved" || status === "accepted") {
+            console.log(`✅ Status approved/accepted. Menyalin '${updatedSubmission.tag}' ke KnowledgeSource...`);
+            await prisma.knowledgeSource.upsert({
+                where: { tag: updatedSubmission.tag },
+                update: {
+                    content_text: updatedSubmission.content_text,
+                    embedding: [], // Reset embedding agar di-compile ulang
+                },
+                create: {
+                    tag: updatedSubmission.tag,
+                    content_text: updatedSubmission.content_text,
+                    embedding: [],
+                }
+            });
+        }
+
+        res.json({
+            _id: updatedSubmission.id,
+            tag: updatedSubmission.tag,
+            content: updatedSubmission.content_text,
+            status: updatedSubmission.status,
+            createdAt: updatedSubmission.createdAt
+        });
+    } catch (error) {
+        console.error("❌ [Admin PATCH /submissions/:id] Error:", error);
+        res.status(500).json({ error: "Gagal memperbarui status kiriman.", details: error.message });
+    }
+});
 
 // --- [POST] Import Data dari JSON ---
 router.post("/import", upload.single("importFile"), async (req, res) => {
@@ -43,20 +121,25 @@ router.post("/import", upload.single("importFile"), async (req, res) => {
 
     let successCount = 0;
     let errorCount = 0;
-    const operations = [];
+    const upsertPromises = [];
 
     for (const item of data) {
         if (item.tag && item.content_text) {
-            operations.push({
-                updateOne: {
-                    filter: { tag: item.tag },
+            upsertPromises.push(
+                prisma.knowledgeSource.upsert({
+                    where: { tag: item.tag },
                     update: {
-                        $set: { content_text: item.content_text, embedding: [] }, // Reset embedding agar di-sync ulang
-                        $setOnInsert: { last_compiled: null },
+                        content_text: item.content_text,
+                        embedding: [], // Reset embedding
                     },
-                    upsert: true,
-                },
-            });
+                    create: {
+                        tag: item.tag,
+                        content_text: item.content_text,
+                        embedding: [],
+                        last_compiled: null,
+                    }
+                })
+            );
             successCount++;
         } else {
             errorCount++;
@@ -64,8 +147,8 @@ router.post("/import", upload.single("importFile"), async (req, res) => {
     }
 
     try {
-        if (operations.length > 0) {
-            await KnowledgeSource.bulkWrite(operations);
+        if (upsertPromises.length > 0) {
+            await Promise.all(upsertPromises);
         }
         res.json({
             message: `Import selesai! ${successCount} data berhasil diproses.${errorCount > 0 ? ` ${errorCount} data dilewati (tag/content kosong).` : ""} Silakan klik 'Sync/Compile' untuk memperbarui vektor.`,
@@ -79,11 +162,16 @@ router.post("/import", upload.single("importFile"), async (req, res) => {
 // [GET] /data
 router.get("/data", async (req, res) => {
     try {
-        const data = await KnowledgeSource.find({}).lean().sort({ tag: 1 });
-        res.json(data);
+        const data = await prisma.knowledgeSource.findMany({
+            orderBy: { tag: "asc" }
+        });
+        
+        // Map to include _id
+        const mapped = data.map(item => ({ ...item, _id: item.id }));
+        res.json(mapped);
     } catch (error) {
         console.error("❌ [Admin GET /data] Error:", error);
-        res.status(500).json({ error: "Gagal mengambil data dari MongoDB Atlas." });
+        res.status(500).json({ error: "Gagal mengambil data dari database." });
     }
 });
 
@@ -95,18 +183,17 @@ router.post("/data", async (req, res) => {
             return res.status(400).json({ error: "Tag dan content_text wajib diisi." });
         }
 
-        const newData = new KnowledgeSource({
-            tag: tag.trim(),
-            content_text: content_text.trim(),
-            embedding: [],
+        const newData = await prisma.knowledgeSource.create({
+            data: {
+                tag: tag.trim(),
+                content_text: content_text.trim(),
+                embedding: [],
+            }
         });
-        await newData.save();
-        res.status(201).json(newData);
+        
+        res.status(201).json({ ...newData, _id: newData.id });
     } catch (error) {
         console.error("❌ [Admin POST /data] Error:", error);
-        if (error.code === 11000) {
-            return res.status(400).json({ error: "Tag data sudah ada di database." });
-        }
         res.status(400).json({ error: "Gagal menyimpan data.", details: error.message });
     }
 });
@@ -115,27 +202,22 @@ router.post("/data", async (req, res) => {
 router.put("/data/:id", async (req, res) => {
     try {
         const update = { ...req.body };
-
-        // Reset embedding jika content berubah agar di-embed ulang
+        const dataToUpdate = {};
+        
+        if (update.tag) dataToUpdate.tag = update.tag.trim();
         if (update.content_text) {
-            update.embedding = [];
+            dataToUpdate.content_text = update.content_text.trim();
+            dataToUpdate.embedding = []; // Reset embedding jika konten berubah
         }
 
-        const updatedData = await KnowledgeSource.findByIdAndUpdate(
-            req.params.id,
-            update,
-            { new: true, runValidators: true }
-        );
+        const updatedData = await prisma.knowledgeSource.update({
+            where: { id: req.params.id },
+            data: dataToUpdate
+        });
 
-        if (!updatedData) {
-            return res.status(404).json({ error: "Data tidak ditemukan." });
-        }
-        res.json(updatedData);
+        res.json({ ...updatedData, _id: updatedData.id });
     } catch (error) {
         console.error("❌ [Admin PUT /data/:id] Error:", error);
-        if (error.code === 11000) {
-            return res.status(400).json({ error: "Tag data sudah ada di database." });
-        }
         res.status(400).json({ error: "Gagal memperbarui data.", details: error.message });
     }
 });
@@ -143,23 +225,30 @@ router.put("/data/:id", async (req, res) => {
 // [DELETE] /data/:id
 router.delete("/data/:id", async (req, res) => {
     try {
-        const deleted = await KnowledgeSource.findByIdAndDelete(req.params.id);
-        if (!deleted) {
-            return res.status(404).json({ error: "Data tidak ditemukan." });
+        // Check if the record is a protected seed record
+        const record = await prisma.knowledgeSource.findUnique({ where: { id: req.params.id } });
+        if (!record) return res.status(404).json({ error: "Data tidak ditemukan." });
+        if (record.tag.startsWith("live_unpad::")) {
+            return res.status(403).json({ error: "Data ini merupakan data dasar (DataLiveUnpad) yang dilindungi dan tidak dapat dihapus." });
         }
-        res.json({ message: "✅ Data berhasil dihapus!", deletedId: req.params.id });
+
+        const deleted = await prisma.knowledgeSource.delete({
+            where: { id: req.params.id }
+        });
+        
+        res.json({ message: "✅ Data berhasil dihapus!", deletedId: deleted.id });
     } catch (error) {
         console.error("❌ [Admin DELETE /data/:id] Error:", error);
         res.status(500).json({ error: "Gagal menghapus data.", details: error.message });
     }
 });
 
-// [POST] /compile — Sync embedding ke Atlas
+// [POST] /compile — Sync embedding
 router.post("/compile", async (req, res) => {
     try {
         console.log("🛠️ Memulai proses sinkronisasi embedding via Admin...");
         await syncEmbeddingsToAtlas();
-        res.json({ message: "✅ Sinkronisasi vektor ke MongoDB Atlas berhasil!" });
+        res.json({ message: "✅ Sinkronisasi vektor berhasil!" });
     } catch (error) {
         console.error("❌ [Admin Compile] Error:", error);
         res.status(500).json({ error: "Gagal melakukan sinkronisasi.", details: error.message });

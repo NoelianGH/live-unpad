@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';   // ✅ only here
 
 export const metadata: Metadata = {
-  title: 'Chatbot Prodi',
-  description: 'Magister Ilmu Manajemen - Unpad',
+  title: 'LiVE Unpad Chatbot',
+  description: 'LiVE Unpad - Universitas Padjadjaran',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

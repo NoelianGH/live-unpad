@@ -1,11 +1,11 @@
-import mongoose from 'mongoose';
- 
+import { prisma } from './prisma.js';
+
 export const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log('✅ MongoDB Atlas terhubung!');
+    await prisma.$connect();
+    console.log('✅ PostgreSQL (Neon) terhubung via Prisma!');
   } catch (err) {
-    console.error('❌ Koneksi MongoDB gagal:', err.message);
+    console.error('❌ Koneksi database gagal:', err.message);
     process.exit(1);
   }
 };

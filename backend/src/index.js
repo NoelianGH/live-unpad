@@ -23,7 +23,11 @@ app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
  
 connectDB().then(async () => {
   // Sync embedding yang belum ada saat startup
-  await syncEmbeddingsToAtlas();
+  try {
+    await syncEmbeddingsToAtlas();
+  } catch (err) {
+    console.error('⚠️ [Startup] Gagal sinkronisasi embedding (Ollama/OpenAI offline):', err.message || err);
+  }
  
   app.listen(PORT, () => {
     console.log(`✅ Server berjalan di http://localhost:${PORT}`);

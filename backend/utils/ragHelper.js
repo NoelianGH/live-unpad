@@ -1,67 +1,104 @@
-import mongoose from "mongoose";
-import KnowledgeSource from "../models/KnowledgeSource.js";
 import { OllamaEmbeddings } from "@langchain/ollama";
-import { MongoDBAtlasVectorSearch } from "@langchain/mongodb";
+import { OpenAIEmbeddings } from "@langchain/openai";
+import { prisma } from "../services/prisma.js";
 
-// SINGLETON: Simpan vector store agar tidak perlu inisialisasi berulang
-let cachedVectorStore = null;
-// Promise-based lock — lebih andal daripada busy-wait loop
-let initPromise = null;
+// Helper function to calculate cosine similarity
+function cosineSimilarity(vecA, vecB) {
+    if (!vecA || !vecB || vecA.length !== vecB.length) return 0;
+    let dotProduct = 0;
+    let normA = 0;
+    let normB = 0;
+    for (let i = 0; i < vecA.length; i++) {
+        dotProduct += vecA[i] * vecB[i];
+        normA += vecA[i] * vecA[i];
+        normB += vecB[i] * vecB[i];
+    }
+    if (normA === 0 || normB === 0) return 0;
+    return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
+}
+
+function getEmbeddings() {
+    const provider = (process.env.EMBEDDING_PROVIDER || "ollama").toLowerCase();
+    
+    if (provider === "openai") {
+        if (!process.env.OPENAI_API_KEY) {
+            console.warn("⚠️ Warning: OPENAI_API_KEY is not set but OpenAI embedding provider is selected.");
+        }
+        return new OpenAIEmbeddings({
+            apiKey: process.env.OPENAI_API_KEY,
+            model: process.env.EMBEDDING_MODEL || "text-embedding-3-small",
+        });
+    } else {
+        return new OllamaEmbeddings({
+            baseUrl: process.env.OLLAMA_BASE_URL || "http://localhost:11434",
+            model: process.env.EMBEDDING_MODEL || "nomic-embed-text",
+        });
+    }
+}
 
 /**
- * Sinkronisasi teks ke vektor (embedding) di MongoDB Atlas.
- * Dijalankan otomatis saat server start atau dipanggil manual dari admin.
- * Proses embedding dilakukan PARALEL (batch) agar lebih cepat.
+ * Sinkronisasi teks ke vektor (embedding) di PostgreSQL via Prisma.
  */
 export async function syncEmbeddingsToAtlas() {
-    console.log("🔄 Mengecek sinkronisasi embedding ke MongoDB Atlas...");
+    console.log("🔄 Mengecek sinkronisasi embedding ke PostgreSQL...");
     try {
-        const sources = await KnowledgeSource.find({
-            $or: [
-                { embedding: { $exists: false } },
-                { embedding: { $size: 0 } },
-                { embedding: null }
-            ]
-        }).lean(); // .lean() — plain object, lebih cepat
+        const sources = await prisma.knowledgeSource.findMany({
+            where: {
+                OR: [
+                    { embedding: { equals: [] } },
+                    { last_compiled: null }
+                ]
+            }
+        });
 
         if (sources.length === 0) {
             console.log("✅ Semua data sudah memiliki embedding.");
             return;
         }
 
+        const embeddings = getEmbeddings();
+
+        // Quick connection test with 3-second timeout to prevent hanging when Ollama is offline
+        try {
+            console.log("🔌 Menguji koneksi ke embedding provider...");
+            const timeout = new Promise((_, reject) =>
+                setTimeout(() => reject(new Error("Embedding provider timeout after 3s")), 3000)
+            );
+            await Promise.race([embeddings.embedQuery("connection test"), timeout]);
+            console.log("🔌 Koneksi sukses!");
+        } catch (connErr) {
+            console.warn("⚠️ Gagal terhubung ke embedding provider (Ollama/OpenAI offline). Melewati sinkronisasi database embedding.");
+            return;
+        }
+
         console.log(`⚙️ Mengonversi ${sources.length} data menjadi vektor (paralel batch)...`);
-
-        const embeddings = new OllamaEmbeddings({
-            baseUrl: process.env.OLLAMA_BASE_URL,
-            model: process.env.EMBEDDING_MODEL,
-        });
-
-        // Proses embedding PARALEL dengan batch size agar tidak overload Ollama
         const BATCH_SIZE = 5;
+        
         for (let i = 0; i < sources.length; i += BATCH_SIZE) {
             const batch = sources.slice(i, i + BATCH_SIZE);
 
-            // Jalankan embedQuery secara paralel dalam satu batch
+            // Generate query embeddings in parallel for the batch
             const vectors = await Promise.all(
                 batch.map(doc => embeddings.embedQuery(doc.content_text))
             );
 
-            // Simpan hasil batch ke DB secara paralel
+            // Update database records
             await Promise.all(
                 batch.map((doc, idx) =>
-                    KnowledgeSource.updateOne(
-                        { _id: doc._id },
-                        { $set: { embedding: vectors[idx], last_compiled: new Date() } }
-                    )
+                    prisma.knowledgeSource.update({
+                        where: { id: doc.id },
+                        data: {
+                            embedding: vectors[idx],
+                            last_compiled: new Date()
+                        }
+                    })
                 )
             );
 
             console.log(`✔ Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${batch.map(d => d.tag).join(", ")} berhasil di-embed.`);
         }
 
-        // Reset cache agar vector store pakai data terbaru
-        resetVectorStore();
-        console.log("🚀 Sinkronisasi selesai! Cache vector store direset.");
+        console.log("🚀 Sinkronisasi selesai!");
     } catch (error) {
         console.error("❌ Gagal saat sinkronisasi embedding:", error);
         throw error;
@@ -69,60 +106,89 @@ export async function syncEmbeddingsToAtlas() {
 }
 
 /**
- * Mendapatkan Vector Store dengan singleton + Promise lock (aman dari race condition).
+ * Retrieve documents similar to query using cosine similarity in memory
  */
-export async function getVectorStore() {
-    if (cachedVectorStore) return cachedVectorStore;
-
-    if (initPromise) return initPromise;
-
-    initPromise = _initVectorStore().then(result => {
-        if (!result) initPromise = null; // reset agar bisa retry jika gagal
-        return result;
-    });
-
-    return initPromise;
-}
-
-async function _initVectorStore() {
+export async function retrieveDocuments(question, k = 6) {
     try {
-        console.log("🔧 Menghubungkan ke MongoDB Atlas Vector Search...");
+        const embeddings = getEmbeddings();
+        const queryVector = await embeddings.embedQuery(question);
 
-        if (mongoose.connection.readyState !== 1) {
-            await mongoose.connection.asPromise();
-        }
-
-        const client = mongoose.connection.getClient();
-        const db = client.db("chatbot_db");
-        const collection = db.collection("knowledgesources");
-
-        const embeddings = new OllamaEmbeddings({
-            baseUrl: process.env.OLLAMA_BASE_URL,
-            model: process.env.EMBEDDING_MODEL,
+        const sources = await prisma.knowledgeSource.findMany({
+            where: {
+                NOT: {
+                    embedding: {
+                        equals: []
+                    }
+                }
+            }
         });
 
-        const vectorStore = new MongoDBAtlasVectorSearch(embeddings, {
-            collection: collection,
-            indexName: "vector_index",
-            textKey: "content_text",
-            embeddingKey: "embedding",
+        if (sources.length === 0) return [];
+
+        const scored = sources.map(source => {
+            const similarity = cosineSimilarity(queryVector, source.embedding);
+            return { ...source, similarity };
         });
 
-        console.log("✅ Vector Store berhasil dihubungkan!");
-        cachedVectorStore = vectorStore;
-        return vectorStore;
+        // Sort by similarity descending
+        scored.sort((a, b) => b.similarity - a.similarity);
 
+        // Take top k
+        return scored.slice(0, k);
     } catch (error) {
-        console.error("❌ Gagal inisialisasi MongoDB Vector Store:", error.message);
-        return null;
+        console.warn("⚠️ [retrieveDocuments] Error embedQuery/fetching vector (Ollama offline). Falling back to keyword search:", error.message || error);
+        
+        try {
+            // Fallback to simple keyword matching on database
+            const sources = await prisma.knowledgeSource.findMany();
+            if (sources.length === 0) return [];
+            
+            const keywords = question.toLowerCase()
+                .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "")
+                .split(/\s+/)
+                .filter(word => word.length > 2);
+                
+            if (keywords.length === 0) {
+                // Return first k documents if query is too short
+                return sources.slice(0, k);
+            }
+            
+            const scored = sources.map(source => {
+                const text = (source.content_text || "").toLowerCase();
+                let score = 0;
+                
+                keywords.forEach(keyword => {
+                    if (text.includes(keyword)) {
+                        score += 1;
+                    }
+                });
+                
+                // Boost score if the query phrase appears as-is
+                const cleanQuestion = question.toLowerCase().trim();
+                if (text.includes(cleanQuestion)) {
+                    score += 5;
+                }
+                
+                return { ...source, similarity: score };
+            });
+            
+            // Filter out items that had no matches if there are any matched documents
+            const matched = scored.filter(s => s.similarity > 0);
+            matched.sort((a, b) => b.similarity - a.similarity);
+            
+            return (matched.length > 0 ? matched : scored).slice(0, k);
+        } catch (fallbackError) {
+            console.error("❌ [retrieveDocuments] Fallback search failed:", fallbackError);
+            return [];
+        }
     }
 }
 
-/**
- * Reset cache vector store. Dipanggil otomatis setelah sync selesai.
- */
+// Dummy vector store methods for backward compatibility if any
+export async function getVectorStore() {
+    return null;
+}
+
 export function resetVectorStore() {
-    cachedVectorStore = null;
-    initPromise = null;
-    console.log("🔄 Vector store cache telah direset.");
+    // No-op
 }

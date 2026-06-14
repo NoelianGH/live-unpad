@@ -1,13 +1,10 @@
-// File: backend/middleware/authMiddleware.js
-
 import jwt from "jsonwebtoken";
-import User from "../models/User.js";
+import { prisma } from "../services/prisma.js";
 
 // Middleware untuk memeriksa token (sudah login atau belum)
 export const protect = async (req, res, next) => {
   let token;
 
-  // Token dikirim di header 'Authorization' dengan format 'Bearer [token]'
   if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
     try {
       // 1. Ambil token dari header
@@ -17,25 +14,35 @@ export const protect = async (req, res, next) => {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
       // 3. Ambil data user dari token (tanpa password) dan simpan di 'req.user'
-      req.user = await User.findById(decoded.userId).select('-password'); 
+      const user = await prisma.user.findUnique({
+        where: { id: decoded.userId }
+      });
 
-      next(); // Lanjut ke rute yang dituju
+      if (!user) {
+        return res.status(401).json({ error: "User tidak ditemukan." });
+      }
+
+      // Simpan di req.user (password dihapus)
+      const { password, ...userWithoutPassword } = user;
+      req.user = userWithoutPassword;
+
+      return next(); // Lanjut ke rute yang dituju
     } catch (error) {
       console.error('Token verification failed:', error);
-      res.status(401).json({ error: "Tidak terotorisasi, token gagal." });
+      return res.status(401).json({ error: "Tidak terotorisasi, token gagal." });
     }
   }
 
   if (!token) {
-    res.status(401).json({ error: "Tidak terotorisasi, tidak ada token." });
+    return res.status(401).json({ error: "Tidak terotorisasi, tidak ada token." });
   }
 };
 
 // Middleware untuk memeriksa ROLE (admin atau bukan)
 export const isAdmin = (req, res, next) => {
   if (req.user && req.user.role === 'admin') {
-    next(); // Jika 'admin', izinkan lanjut
+    return next(); // Jika 'admin', izinkan lanjut
   } else {
-    res.status(403).json({ error: "Tidak terotorisasi. Hanya admin yang diizinkan." });
+    return res.status(403).json({ error: "Tidak terotorisasi. Hanya admin yang diizinkan." });
   }
 };

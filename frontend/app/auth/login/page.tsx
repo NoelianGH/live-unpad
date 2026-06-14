@@ -19,9 +19,12 @@ export default function LoginPage() {
         body: JSON.stringify(form),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Login gagal');
+      if (!res.ok) throw new Error(data.error || data.message || 'Login gagal');
+      // Store in localStorage for client-side checks
       localStorage.setItem('userToken', data.token);
       localStorage.setItem('userRole', data.role);
+      // Also set a cookie so Next.js middleware can verify auth on protected routes
+      document.cookie = `userToken=${data.token}; path=/; max-age=604800; SameSite=Lax`;
       router.push(data.role === 'admin' ? '/admin' : '/chatbot');
     } catch (err: any) {
       setError(err.message);
@@ -34,7 +37,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
         <h1 className="text-2xl font-semibold text-center mb-2">Masuk</h1>
-        <p className="text-center text-gray-500 text-sm mb-6">Chatbot Magister Ilmu Manajemen</p>
+        <p className="text-center text-gray-500 text-sm mb-6">Chatbot LiVE Unpad</p>
 
         {error && <div className="bg-red-50 text-red-600 text-sm p-3 rounded-lg mb-4">{error}</div>}
 
@@ -70,7 +73,7 @@ export default function LoginPage() {
 
         <p className="text-center text-sm text-gray-500 mt-4">
           Belum punya akun?{' '}
-          <Link href="/register" className="text-yellow-500 hover:underline">Daftar</Link>
+          <Link href="/auth/register" className="text-yellow-500 hover:underline">Daftar</Link>
         </p>
       </div>
     </div>
