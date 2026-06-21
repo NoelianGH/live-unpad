@@ -1,132 +1,41 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
 generator client {
   provider = "prisma-client-js"
 }
 
-datasource db {
-  provider = "postgresql"
+model User {
+  id          String       @id @default(uuid())
+  name        String       @default("")
+  email       String       @unique
+  password    String
+  role        String       @default("user")
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  submissions Submission[]
 }
 
-model wp_comments {
-  comment_id           BigInt   @id @default(autoincrement())
-  comment_post_id      BigInt   @default(0)
-  comment_author       String   @default("")
-  comment_author_email String   @default("") @db.VarChar(100)
-  comment_author_url   String   @default("") @db.VarChar(200)
-  comment_author_ip    String   @default("") @db.VarChar(100)
-  comment_date         DateTime @default(now()) @db.Timestamp(6)
-  comment_date_gmt     DateTime @default(now()) @db.Timestamp(6)
-  comment_content      String   @default("")
-  comment_karma        Int      @default(0)
-  comment_approved     String   @default("1") @db.VarChar(20)
-  comment_agent        String   @default("") @db.VarChar(255)
-  comment_type         String   @default("comment") @db.VarChar(20)
-  comment_parent       BigInt   @default(0)
-  user_id              BigInt   @default(0)
+model Submission {
+  id           String   @id @default(uuid())
+  tag          String
+  content_text String
+  status       String   @default("pending")
+  submittedBy  String
+  user         User     @relation(fields: [submittedBy], references: [id], onDelete: Cascade)
+  notes        String?  @default("")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
 
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model wp_options {
-  option_id    Int?
-  option_name  String?
-  option_value String?
-  autoload     String?
-
-  @@ignore
-}
-
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model wp_postmeta {
-  meta_id    Int?
-  post_id    Int?
-  meta_key   String?
-  meta_value String?
-
-  @@ignore
-}
-
-model wp_posts {
-  id                    BigInt    @id @default(autoincrement())
-  post_author           BigInt    @default(0)
-  post_date             DateTime  @default(now()) @db.Timestamp(6)
-  post_date_gmt         DateTime? @db.Timestamp(6)
-  post_content          String    @default("")
-  post_title            String    @default("")
-  post_excerpt          String    @default("")
-  post_status           String    @default("publish") @db.VarChar(20)
-  comment_status        String    @default("open") @db.VarChar(20)
-  ping_status           String    @default("open") @db.VarChar(20)
-  post_password         String    @default("") @db.VarChar(255)
-  post_name             String    @default("") @db.VarChar(200)
-  to_ping               String    @default("")
-  pinged                String    @default("")
-  post_modified         DateTime  @default(now()) @db.Timestamp(6)
-  post_modified_gmt     DateTime? @db.Timestamp(6)
-  post_content_filtered String    @default("")
-  post_parent           BigInt    @default(0)
-  guid                  String    @default("") @db.VarChar(255)
-  menu_order            Int       @default(0)
-  post_type             String    @default("post") @db.VarChar(20)
-  post_mime_type        String    @default("") @db.VarChar(100)
-  comment_count         BigInt    @default(0)
-}
-
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model wp_term_relationships {
-  object_id        Int?
-  term_taxonomy_id Int?
-  term_order       Int?
-
-  @@ignore
-}
-
-model wp_term_taxonomy {
-  term_taxonomy_id BigInt @id @default(autoincrement())
-  term_id          Int    @default(0)
-  taxonomy         String @default("") @db.VarChar(32)
-  description      String @default("")
-  parent           Int    @default(0)
-  count            Int    @default(0)
-}
-
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model wp_termmeta {
-  meta_id    Int?
-  term_id    Int?
-  meta_key   String?
-  meta_value String?
-
-  @@ignore
-}
-
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model wp_terms {
-  term_id    Int?
-  name       String?
-  slug       String?
-  term_group Int?
-
-  @@ignore
-}
-
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model wp_usermeta {
-  umeta_id   Int?
-  user_id    Int?
-  meta_key   String?
-  meta_value String?
-
-  @@ignore
-}
-
-model wp_users {
-  id                  BigInt   @id @default(autoincrement())
-  user_login          String   @default("") @db.VarChar(60)
-  user_pass           String   @default("") @db.VarChar(255)
-  user_nicename       String   @default("") @db.VarChar(50)
-  user_email          String   @default("") @db.VarChar(100)
-  user_url            String   @default("") @db.VarChar(100)
-  user_registered     DateTime @default(now()) @db.Timestamp(6)
-  user_activation_key String   @default("") @db.VarChar(255)
-  user_status         Int      @default(0)
-  display_name        String   @default("") @db.VarChar(250)
+model KnowledgeSource {
+  id            String    @id @default(uuid())
+  tag           String    @unique
+  content_text  String
+  last_compiled DateTime?
+  embedding     Float[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 }

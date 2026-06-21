@@ -192,3 +192,180 @@ Setelah melakukan log in ke LiVE Unpad, maka Rekan Mahasiswa akan menemukan hala
 - Clear my choice: Digunakan untuk menghapus jawaban yang sudah dipilih, jika Rekan Mahasiswa ingin menggantinya dengan jawaban lain.
 - Next Page: Tombol untuk melanjutkan ke halaman soal berikutnya dalam kuis yang terdiri dari beberapa halaman.
 4. Setelah menyelesaikan kuis, maka akan muncul tampilan "Summary of attempt" yang menandakan butir soal yang sudah terisi dan belum. Rekan Mahasiswa dapat memeriksa kembali soal mana saja yang belum terisi. Namun, jika sudah selesai dan yakin, rekan mahasiswa dapat Klik "Submit all and finish".
+
+Panduan LOGIN
+Login
+Apakah anda baru pertama Login di LiVE?
+Apakah anda sudah pernah Login di LiVE?
+Pastikan email Unpad sudah aktif lalu silahkan register dengan PAUS-ID. Lalu ikuti wizardnya dan silahkan Login.
+Jika muncul text "The login attempt failed. Reason: An account with your email address could not be found"
+Mohon maaf atas kendala ini Bapak/ Ibu dan Mahasiswa Unpad yang kami hormati. Kami LiVE sudah berkomunikasi dengan tim pengembang. Saat ini dalam proses analisis terkait kendala tersebut. Bagi civitas yang terkendala daftar di live bisa mengisi Form pada link berikut ini: https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog Kami akan informasikan kembali jika sistem ddaftar berjalan normal kembali melalui e-mail yang sudah dituliskan di Form. Terima kasih atas pengertiannya. Salam hangat LiVE
+Mohon maaf atas kendala ini Bapak/ Ibu dan Mahasiswa Unpad yang kami hormati. Kami LiVE sudah berkomunikasi dengan tim pengembang. Saat ini dalam proses analisis terkait kendala tersebut. Bagi civitas yang terkendala daftar di live bisa mengisi Form pada link berikut ini: https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog Kami akan informasikan kembali jika sistem ddaftar berjalan normal kembali melalui e-mail yang sudah dituliskan di Form. Terima kasih atas pengertiannya. Salam hangat LiVE
+Tidak bisa login karena time out.
+Pastikan koneksi inetrnet stabil, coba untuk refresh ulang dan ganti broser.
+
+Panduan Backup and Restore
+Bagaimana Cara backup and restore Course?
+Civitas Unpad dapat menonton tutorial backup dan restore pada akun Youtube berikut: https://youtu.be/j_c8xkJRoC8?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live"
+Untuk Dosen
+
+Panduan Enroll
+Bagaimana cara enroll ke dalam course?
+Apakah anda dosen atau mahasiswa?
+Dosen
+Mahasiswa
+Civitas Unpad dapat melakukan enroll dengan masuk melalui akun SIAT Dosen di bagian menu "Perkuliahan" dan pilih "Jadwal Mengajar". Apabila masuk melalui link tersebut, Civitas dapat langsung ter-enroll sebagai teacher. Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: https://youtu.be/to0yp3uvaUY?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live"
+Tetap tidak bisa.
+Civitas Unpad dapat berkonsultasi kepada Helpdesk LiVE.
+Melakukan enroll sebagai teacher.
+Melakukan enroll mahasiswa ke dalam course.
+Civitas Unpad dapat meminta mahasiswa untuk melakukan enroll secara manual di dalam akun SIAT Student masing-masing.
+Tetap tidak bisa.
+Civitas Unpad dapat mengakses video tutorial cara mengenroll mahasiswa ke dalam course pada akun Youtube berikut: https://youtu.be/yxto15Kbchw?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live"
+Tetap tidak bisa.
+Civitas Unpad dapat berkonsultasi kepada Helpdesk LiVE.
+Civitas Unpad dapat masuk ke dalam course dengan enroll melalui akun SIAT Student masing-masing.
+Tetap tidak bisa
+Civitas Unpad dapat menghubungi dosen pengampu MK untuk dilakukan enroll secara manual ke dalam course.
+Untuk Dosen
+
+Panduan Menambahkan Aktivitas
+Bagaimana cara menambahkan fitur aktivitas dalam LiVE Unpad?
+Civitas Unpad dapat mengakses berbagai tutorial untuk masuk ke dalam LiVE Unpad melalui akun Youtube @LiVEUnpadofficial atau mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live"
+Bagaimana cara menambahkan fitur assignment (tugas)?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/Fe2l2S4DzWA?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 43.
+Bagaimana cara menambahkan fitur chat?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/rO0-1F-C5gQ?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 49.
+Bagaimana cara menambahkan fitur pilihan (choice)?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/tIrddi9BDJo?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 52.
+Bagaimana cara menambahkan fitur Umpan Balik (feedback)?
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 55.
+Bagaimana cara menambahkan fitur Forum?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/o0QEwB99L_c?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 60.
+Bagaimana cara menambahkan fitur glossarry?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/GdvNPvlkoK0?feature=shared
+Bagaimana cara menambahkan Lesson Aktivitas?
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 67.
+Bagaimana cara menambahkan fitur WIKI?
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 73.
+Bagaimana cara menambahkan aktivitas H5P?
+Untuk Dosen
+
+Panduan Menambahkan Resources
+Bagaimana cara menambahkan fitur resources dalam LiVE Unpad?
+Bagaimana cara menambahkan fitur buku?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/MvALiq1ok4Q?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 78.
+Bagaimana cara menambahkan fitur file?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ZbziRGk7WA4?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 78.
+Bagaimana cara menambahkan fitur folder?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/UYcE6XHUgpM?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 78.
+Bagaimana cara menambahkan fitur label?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/l0OiFlWBhG0?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 83.
+Bagaimana cara menambahkan fitur page?
+Bagaimana cara menambahkan fitur URL?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/vKykX7Q9LMk?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 78.
+Untuk Dosen
+
+Panduan Quiz
+Bagaimana cara menambahkan fitur Quiz dalam LiVE Unpad?
+Bagaimana cara menambahkan kuis fill in the blank?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/8QVbTen_HSw?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 114.
+Bagaimana cara import soal ke laman quiz?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/SVJQRHDDY6s?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 118.
+Bagaimana cara menambahkan kuis essay?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/m8GruWZ16DU?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 97.
+Bagaimana cara menambahkan kuis multiple choice?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/nfiUaonq0PU?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 104.
+Bagaimana cara menambahkan kuis true or false?
+Bagaimana cara menambahkan kuis matching (mencocokkan)?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/MoDJ59opDIQ?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 100.
+Multiple choice dengan jawaban benar lebih dari 1
+Multiple choice dengan 1 jawaban benar
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/DI5wwvtOOQU?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 107.
+Untuk Dosen
+
+Panduan Gradebook
+Bagaimana cara mengatur penilaian (gradebook) di LiVE Unpad?
+Bagaimana cara menambahkan skala di gradebook?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/pXjaXTQ30so?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 136.
+Bagaimana cara menambahkan huruf mutu di gradebook?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/plm-bBks130?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 140.
+Bagaimana cara mengatur pembobotan nilai di dalam gradebook?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/zpZOFAK86dY?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 143.
+Pendahuluan ke penilaian/gradebook LiVE Unpad
+Bagaimana cara mengatur aktivitas untuk gradebook/penilaian?
+Bagaimana cara menambahkan kategori di dalam gradebook?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/IXnmA8ZcYio?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 144.
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/YZaMGHPry4E?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 134.
+Bagaimana cara menggunakan rubrik di gradebook?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/hv21mk1QHTI?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 144.
+Untuk Dosen
+
+Panduan Panopto
+Bagaimana cara mengintegrasikan penggunaan Panopto dengan LiVE Unpad?
+Bagaimana cara mendownload panopto for Mac/Windows?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/KXMMXhAvPRA?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 144.
+Bagaimana cara mengecek statistik video panopto?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/dn4RiCSDvvw?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 148.
+Bagaimana cara merecord video bahan ajar pada panopto?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/cNE_GPYdFY4?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 146.
+Bagaimana cara upload video bahan ajar pada panopto?
+Bagaimana cara mengintegrasikan (Add block) Panopto dalam LiVE Unpad?
+Bagaimana cara melakukan share video panopto?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/56fuvGPtJ4g?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 147.
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/1BFPOZDLucc?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 146.
+Bagaimana cara mengedit video panopto?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/mA4D8hKMDIg?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 147.
+Bagaimana cara menambahkan konten pada video panopto?
+Untuk Dosen
+
+Panduan Mahasiswa
+Bagaimana cara melakukan submit assignment (tugas)?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/4l4m6tTkLZQ?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 14.
+Panduan Penggunaan LiVE Untuk mahasiswa?
+Bagaimana cara menambahkan discussion dalam forum discussion?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ArRW0V_EkM0?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 16.
+Bagaimana cara menambahkan chat?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/TjEoxDhDsao?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 18.
+Bagaimana cara mengerjakan kuis di LiVE?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/XECgi4NHlpI?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 19.
+Bagaimana cara melakukan submit video panopto ke dalam LiVE
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ZURexVpwWG0?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 21.
+Untuk Mahasiswa
+Bagaimana cara mengubah profil pada LiVE Unpad?
+Civitas Unpad dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 12.
+Bagaimana cara masuk ke dalam Course Unpad melalui student.unpad?
+Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/4l4m6tTkLZQ?feature=shared
+Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian "Informasi Panduan Live". Panduan terkait hal ini dapat di lihat pada halaman 14.
