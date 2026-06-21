@@ -19,7 +19,7 @@ export default function RegisterPage() {
         body: JSON.stringify(form),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Registrasi gagal');
+      if (!res.ok) throw new Error(data.error || data.message || 'Registrasi gagal');
       router.push('/auth/login');
     } catch (err: any) {
       setError(err.message);
