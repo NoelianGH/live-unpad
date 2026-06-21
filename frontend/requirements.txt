@@ -1,0 +1,21 @@
+# Frontend Requirements
+
+## System Requirements
+- Node.js >= 18.x
+- npm >= 9.x
+
+## Primary Dependencies
+- next == 16.2.4
+- react == 19.2.4
+- react-dom == 19.2.4
+- react-markdown >= 10.1.0
+
+## Development Dependencies
+- @tailwindcss/postcss >= 4.0.0
+- @types/node >= 20.0.0
+- @types/react >= 19.0.0
+- @types/react-dom >= 19.0.0
+- eslint >= 9.0.0
+- eslint-config-next == 16.2.4
+- tailwindcss >= 4.0.0
+- typescript >= 5.0.0
