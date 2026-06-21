@@ -3,6 +3,7 @@ import { protect, isAdmin } from "../middleware/authMiddleware.js";
 import { prisma } from "../services/prisma.js";
 import { syncEmbeddingsToAtlas } from "../utils/ragHelper.js";
 import multer from "multer";
+import bcrypt from "bcryptjs";
 
 const router = express.Router();
 
@@ -252,6 +253,71 @@ router.post("/compile", async (req, res) => {
     } catch (error) {
         console.error("❌ [Admin Compile] Error:", error);
         res.status(500).json({ error: "Gagal melakukan sinkronisasi.", details: error.message });
+    }
+});
+
+// --- [GET] /api/admin/users ---
+// Ambil semua user
+router.get("/users", async (req, res) => {
+    try {
+        const users = await prisma.user.findMany({
+            select: {
+                id: true,
+                name: true,
+                email: true,
+                role: true,
+                createdAt: true
+            },
+            orderBy: { createdAt: "desc" }
+        });
+        res.json(users);
+    } catch (error) {
+        console.error("❌ [Admin GET /users] Error:", error);
+        res.status(500).json({ error: "Gagal mengambil data user." });
+    }
+});
+
+// --- [POST] /api/admin/users ---
+// Buat user baru (Teacher/Student/Admin)
+router.post("/users", async (req, res) => {
+    try {
+        const { name, email, password, role } = req.body;
+        if (!email || !password || !role) {
+            return res.status(400).json({ error: "Email, password, dan role wajib diisi." });
+        }
+
+        const validRoles = ["admin", "teacher", "student"];
+        if (!validRoles.includes(role)) {
+            return res.status(400).json({ error: "Role tidak valid." });
+        }
+
+        const normalizedEmail = email.toLowerCase().trim();
+        const exists = await prisma.user.findUnique({ where: { email: normalizedEmail } });
+        if (exists) {
+            return res.status(400).json({ error: "Email sudah terdaftar." });
+        }
+
+        const hashed = await bcrypt.hash(password, 10);
+        const newUser = await prisma.user.create({
+            data: {
+                name: name ? name.trim() : "",
+                email: normalizedEmail,
+                password: hashed,
+                role
+            },
+            select: {
+                id: true,
+                name: true,
+                email: true,
+                role: true,
+                createdAt: true
+            }
+        });
+
+        res.status(201).json(newUser);
+    } catch (error) {
+        console.error("❌ [Admin POST /users] Error:", error);
+        res.status(500).json({ error: "Gagal membuat user baru.", details: error.message });
     }
 });
 

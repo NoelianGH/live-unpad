@@ -17,12 +17,38 @@ router.post('/register', async (req, res) => {
     if (exists) return res.status(400).json({ error: 'Email sudah terdaftar' });
 
     const hashed = await bcrypt.hash(password, 10);
+
+    // Auto-detect role
+    let role = 'student';
+    const emailLower = normalizedEmail.toLowerCase();
+    const nameLower = name ? name.toLowerCase() : '';
+
+    if (emailLower.endsWith('@unpad.ac.id') && !emailLower.includes('student.')) {
+      role = 'teacher';
+    } else if (
+      emailLower.includes('dosen') || 
+      emailLower.includes('teacher') || 
+      emailLower.includes('lecturer') ||
+      nameLower.includes('dosen') ||
+      nameLower.includes('teacher') ||
+      nameLower.includes('lecturer') ||
+      nameLower.includes('prof.') ||
+      nameLower.includes('dr.')
+    ) {
+      role = 'teacher';
+    } else if (
+      emailLower.includes('admin') || 
+      nameLower.includes('admin')
+    ) {
+      role = 'admin';
+    }
+
     await prisma.user.create({
       data: {
         name: name ? name.trim() : '',
         email: normalizedEmail,
         password: hashed,
-        role: 'user'
+        role: role
       }
     });
 

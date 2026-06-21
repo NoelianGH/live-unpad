@@ -30,7 +30,10 @@ export default function ChatbotPage() {
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/flow`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${typeof window !== 'undefined' ? localStorage.getItem('userToken') : ''}`,
+        },
         body: JSON.stringify({}),
       });
       const data = await res.json();
@@ -52,7 +55,10 @@ export default function ChatbotPage() {
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/flow`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('userToken')}`,
+        },
         body: JSON.stringify({
           category: activeCategory,
           node_id: choice.id,
@@ -77,7 +83,10 @@ export default function ChatbotPage() {
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/flow`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('userToken')}`,
+        },
         body: JSON.stringify({}),
       });
       const data = await res.json();
@@ -259,52 +268,51 @@ export default function ChatbotPage() {
           <div ref={bottomRef} />
         </div>
 
-        {/* Input */}
-        <div className="bg-white border-t border-gray-200 px-6 py-4 flex gap-3 items-end relative">
-          <div className="flex gap-2 w-full items-center">
-            {/* Presets Button */}
-            <div className="relative">
-              <button
-                onClick={() => setShowPresets(!showPresets)}
-                className="bg-gray-100 hover:bg-gray-200 border border-gray-300 text-gray-700 px-3 py-2 rounded-xl text-sm font-medium transition flex items-center gap-1 whitespace-nowrap"
-              >
-                Preset 
-                <span className="text-xs transition-transform duration-200">{showPresets ? '▼' : '▲'}</span>
-              </button>
-              
-              {showPresets && (
-                <div className="absolute bottom-full left-0 mb-2 w-80 bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden divide-y divide-gray-100">
-                  <div className="bg-gray-50 px-4 py-2 text-xs font-semibold text-gray-500">Preset Pertanyaan</div>
-                  {presets.map((p, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => {
-                        setShowPresets(false);
-                        sendMessage(p);
-                      }}
-                      className="w-full text-left px-4 py-2.5 text-xs text-gray-700 hover:bg-yellow-50 transition"
-                    >
-                      {p}
-                    </button>
-                  ))}
-                </div>
-              )}
+        {/* Input & Presets container */}
+        <div className="bg-white border-t border-gray-200 px-6 py-4 relative">
+          {/* Floating Preset Questions Panel */}
+          {showPresets && (
+            <div className="absolute bottom-full left-6 right-6 mb-2 bg-white border border-gray-200 rounded-2xl shadow-xl z-50 overflow-hidden divide-y divide-gray-100 max-w-xl">
+              <div className="bg-gray-50 px-4 py-2.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Preset Pertanyaan:
+              </div>
+              <div className="flex flex-col">
+                {presets.map((p, idx) => (
+                  <button
+                    key={idx}
+                    onMouseDown={() => {
+                      sendMessage(p);
+                      setShowPresets(false);
+                    }}
+                    className="w-full text-left px-4 py-3 text-xs text-gray-700 hover:bg-yellow-50 transition font-medium"
+                  >
+                    {p}
+                  </button>
+                ))}
+              </div>
             </div>
+          )}
 
+          <div className="flex gap-2 w-full items-center">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+              onFocus={() => setShowPresets(true)}
+              onBlur={() => setShowPresets(false)}
               placeholder="Ketik pesan Anda..."
               className="flex-1 border border-gray-300 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-950 bg-white"
             />
             <button
               onClick={handleSend}
               disabled={loading}
-              className="bg-yellow-400 text-gray-900 px-5 py-2 rounded-xl text-sm font-semibold hover:bg-yellow-500 disabled:opacity-50 transition"
+              className="bg-yellow-400 text-gray-900 p-2.5 rounded-xl hover:bg-yellow-500 disabled:opacity-50 transition flex items-center justify-center shadow-sm"
+              title="Kirim"
             >
-              Kirim
+              <svg className="w-5 h-5 stroke-current" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
             </button>
           </div>
         </div>

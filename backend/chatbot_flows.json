@@ -3,123 +3,74 @@
     "name": "LOGIN",
     "nodes": {
       "_tkUI_51MUsOe7TQKEoO-1": {
-        "text": "Login",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Pilih kendala login yang Anda alami:",
+        "is_question": true
       },
-      "_tkUI_51MUsOe7TQKEoO-3": {
-        "text": "Apakah anda baru pertama Login di LiVE?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "login_first_time": {
+        "text": "Baru pertama kali login di LiVE?",
+        "is_question": false
       },
-      "_tkUI_51MUsOe7TQKEoO-5": {
-        "text": "Apakah anda sudah pernah Login di LiVE?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "login_first_time_steps": {
+        "text": "Untuk login pertama kali di LiVE, ikuti langkah berikut:\n1. Aktifkan email Unpad Anda.\n2. Lakukan registrasi dengan PAUS-ID.\n3. Ikuti wizard pendaftaran.\n4. Silakan masuk/login.",
+        "is_question": false
       },
-      "_tkUI_51MUsOe7TQKEoO-10": {
-        "text": "Pastikan email Unpad sudah aktif lalu silahkan register dengan PAUS-ID. Lalu ikuti wizardnya dan silahkan Login.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "login_first_time_err_btn": {
+        "text": "Tetap tidak bisa / Muncul error 'account with your email could not be found'?",
+        "is_question": true
       },
-      "_tkUI_51MUsOe7TQKEoO-17": {
-        "text": "Jika muncul text \"The login attempt failed. Reason: An account with your email address could not be found\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "login_first_time_form": {
+        "text": "Mohon maaf atas kendala ini. Tim pengembang kami sedang melakukan analisis dan investigasi terkait kendala tersebut. Bagi Civitas yang terkendala, silakan mengisi Google Form berikut agar segera ditindaklanjuti:\nhttps://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog\nKami akan menginformasikan kembali jika pendaftaran sudah berjalan normal melalui e-mail yang Anda tulis di Form.",
+        "is_question": false
       },
-      "_tkUI_51MUsOe7TQKEoO-19": {
-        "text": "Mohon maaf atas kendala ini Bapak/ Ibu dan Mahasiswa Unpad yang kami hormati. Kami LiVE sudah berkomunikasi dengan tim pengembang. Saat ini dalam proses analisis terkait kendala tersebut. Bagi civitas yang terkendala daftar di live bisa mengisi Form pada link berikut ini: https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog Kami akan informasikan kembali jika sistem ddaftar berjalan normal kembali melalui e-mail yang sudah dituliskan di Form. Terima kasih atas pengertiannya. Salam hangat LiVE",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "login_already": {
+        "text": "Sudah pernah login sebelumnya tapi sekarang tidak bisa?",
+        "is_question": false
       },
-      "_tkUI_51MUsOe7TQKEoO-21": {
-        "text": "Mohon maaf atas kendala ini Bapak/ Ibu dan Mahasiswa Unpad yang kami hormati. Kami LiVE sudah berkomunikasi dengan tim pengembang. Saat ini dalam proses analisis terkait kendala tersebut. Bagi civitas yang terkendala daftar di live bisa mengisi Form pada link berikut ini: https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog Kami akan informasikan kembali jika sistem ddaftar berjalan normal kembali melalui e-mail yang sudah dituliskan di Form. Terima kasih atas pengertiannya. Salam hangat LiVE",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "login_already_form": {
+        "text": "Mohon maaf atas kendala ini. Tim pengembang kami sedang melakukan analisis dan investigasi terkait kendala tersebut (seperti error 'account with your email could not be found'). Silakan mengisi Google Form berikut agar segera ditindaklanjuti:\nhttps://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog\nKami akan menginformasikan kembali jika pendaftaran sudah berjalan normal melalui e-mail yang Anda tulis di Form.",
+        "is_question": false
       },
-      "_tkUI_51MUsOe7TQKEoO-23": {
-        "text": "Tidak bisa login karena time out.",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "login_timeout": {
+        "text": "Tidak bisa login karena time out?",
+        "is_question": false
       },
-      "_tkUI_51MUsOe7TQKEoO-25": {
-        "text": "Pastikan koneksi inetrnet stabil, coba untuk refresh ulang dan ganti broser.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "login_timeout_steps": {
+        "text": "Untuk kendala login time out, silakan ikuti langkah berikut:\n1. Pastikan koneksi internet Anda stabil.\n2. Lakukan segarkan/refresh halaman.\n3. Coba menggunakan browser lain (seperti Google Chrome atau Firefox).",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "_tkUI_51MUsOe7TQKEoO-1",
-        "target": "_tkUI_51MUsOe7TQKEoO-3"
+        "target": "login_first_time"
       },
       {
         "source": "_tkUI_51MUsOe7TQKEoO-1",
-        "target": "_tkUI_51MUsOe7TQKEoO-5"
+        "target": "login_already"
       },
       {
         "source": "_tkUI_51MUsOe7TQKEoO-1",
-        "target": "_tkUI_51MUsOe7TQKEoO-23"
+        "target": "login_timeout"
       },
       {
-        "source": "_tkUI_51MUsOe7TQKEoO-3",
-        "target": "_tkUI_51MUsOe7TQKEoO-10"
+        "source": "login_first_time",
+        "target": "login_first_time_steps"
       },
       {
-        "source": "_tkUI_51MUsOe7TQKEoO-5",
-        "target": "_tkUI_51MUsOe7TQKEoO-21"
+        "source": "login_first_time_steps",
+        "target": "login_first_time_err_btn"
       },
       {
-        "source": "_tkUI_51MUsOe7TQKEoO-10",
-        "target": "_tkUI_51MUsOe7TQKEoO-17"
+        "source": "login_first_time_err_btn",
+        "target": "login_first_time_form"
       },
       {
-        "source": "_tkUI_51MUsOe7TQKEoO-17",
-        "target": "_tkUI_51MUsOe7TQKEoO-19"
+        "source": "login_already",
+        "target": "login_already_form"
       },
       {
-        "source": "_tkUI_51MUsOe7TQKEoO-23",
-        "target": "_tkUI_51MUsOe7TQKEoO-25"
-      }
-    ],
-    "questions": [
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-1",
-        "text": "Login"
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-3",
-        "text": "Apakah anda baru pertama Login di LiVE?"
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-5",
-        "text": "Apakah anda sudah pernah Login di LiVE?"
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-23",
-        "text": "Tidak bisa login karena time out."
-      }
-    ],
-    "answers": [
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-10",
-        "text": "Pastikan email Unpad sudah aktif lalu silahkan register dengan PAUS-ID. Lalu ikuti wizardnya dan silahkan Login."
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-17",
-        "text": "Jika muncul text \"The login attempt failed. Reason: An account with your email address could not be found\""
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-19",
-        "text": "Mohon maaf atas kendala ini Bapak/ Ibu dan Mahasiswa Unpad yang kami hormati. Kami LiVE sudah berkomunikasi dengan tim pengembang. Saat ini dalam proses analisis terkait kendala tersebut. Bagi civitas yang terkendala daftar di live bisa mengisi Form pada link berikut ini: https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog Kami akan informasikan kembali jika sistem ddaftar berjalan normal kembali melalui e-mail yang sudah dituliskan di Form. Terima kasih atas pengertiannya. Salam hangat LiVE"
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-21",
-        "text": "Mohon maaf atas kendala ini Bapak/ Ibu dan Mahasiswa Unpad yang kami hormati. Kami LiVE sudah berkomunikasi dengan tim pengembang. Saat ini dalam proses analisis terkait kendala tersebut. Bagi civitas yang terkendala daftar di live bisa mengisi Form pada link berikut ini: https://docs.google.com/forms/d/e/1FAIpQLSdrdNIfhWSBIDFTIda2eWXHO4iIQl9OEfIaJXuGA4IHalOFgg/viewform?usp=dialog Kami akan informasikan kembali jika sistem ddaftar berjalan normal kembali melalui e-mail yang sudah dituliskan di Form. Terima kasih atas pengertiannya. Salam hangat LiVE"
-      },
-      {
-        "id": "_tkUI_51MUsOe7TQKEoO-25",
-        "text": "Pastikan koneksi inetrnet stabil, coba untuk refresh ulang dan ganti broser."
+        "source": "login_timeout",
+        "target": "login_timeout_steps"
       }
     ]
   },
@@ -127,41 +78,18 @@
     "name": "Backup and Restore",
     "nodes": {
       "4xQD4HL6rll4TQHeG6X7-1": {
-        "text": "Bagaimana Cara backup and restore Course?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara melakukan backup dan restore Course?",
+        "is_question": false
       },
-      "0Jo5z84gqtxUMVM0efME-1": {
-        "text": "Civitas Unpad dapat menonton tutorial backup dan restore pada akun Youtube berikut: https://youtu.be/j_c8xkJRoC8?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "1pifoikoU46Fx3cis7hz-2": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "backup_restore_res": {
+        "text": "Panduan Backup dan Restore Course (Khusus Dosen/Lecturer):\n\nAnda dapat menonton tutorial backup dan restore pada akun YouTube berikut:\nhttps://youtu.be/j_c8xkJRoC8\n\nAtau mengakses buku panduan resmi di laman **live.unpad.ac.id** pada bagian **'Informasi Panduan Live'**.",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "4xQD4HL6rll4TQHeG6X7-1",
-        "target": "0Jo5z84gqtxUMVM0efME-1"
-      }
-    ],
-    "questions": [
-      {
-        "id": "4xQD4HL6rll4TQHeG6X7-1",
-        "text": "Bagaimana Cara backup and restore Course?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "0Jo5z84gqtxUMVM0efME-1",
-        "text": "Civitas Unpad dapat menonton tutorial backup dan restore pada akun Youtube berikut: https://youtu.be/j_c8xkJRoC8?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\""
-      },
-      {
-        "id": "1pifoikoU46Fx3cis7hz-2",
-        "text": "Untuk Dosen"
+        "target": "backup_restore_res"
       }
     ]
   },
@@ -169,93 +97,50 @@
     "name": "Masuk Course",
     "nodes": {
       "T1CiP7t_2xLl8tIqyYkA-1": {
-        "text": "Bagaimana cara masuk ke dalam course?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara masuk ke dalam Course?",
+        "is_question": false
       },
-      "SpHGhkwYepaDPUml4Vun-1": {
-        "text": "Apakah anda dosen atau mahasiswa?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "masuk_course_role_question": {
+        "text": "Apakah Anda seorang Dosen atau Mahasiswa?",
+        "is_question": true
       },
-      "SpHGhkwYepaDPUml4Vun-3": {
+      "masuk_course_dosen": {
         "text": "Dosen",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+        "is_question": false
       },
-      "SpHGhkwYepaDPUml4Vun-5": {
+      "masuk_course_dosen_res": {
+        "text": "Sebagai Dosen, Anda dapat masuk ke dalam Course melalui **SIAT Dosen**:\n1. Masuk ke portal SIAT Dosen.\n2. Pilih menu **'Perkuliahan'**.\n3. Pilih **'Jadwal Mengajar'**.\n\nUntuk panduan lengkap, silakan tonton tutorial YouTube berikut:\nhttps://youtu.be/to0yp3uvaUY",
+        "is_question": false
+      },
+      "masuk_course_mahasiswa": {
         "text": "Mahasiswa",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+        "is_question": false
       },
-      "SpHGhkwYepaDPUml4Vun-7": {
-        "text": "Civitas Unpad dapat masuk ke dalam course melalui SIAT Dosen di bagian menu \"Perkuliahan\" dan pilih \"Jadwal Mengajar\". Untuk lebih lengkapnya, Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: https://youtu.be/to0yp3uvaUY?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "GaQC-DNsRzz4Nencyubd-3": {
-        "text": "Civitas Unpad dapat masuk ke dalam course melalui SIAT student.unpad Untuk lebih lengkapnya, Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: atau buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "10GjnckQzjk4duHbaqQs-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "masuk_course_mahasiswa_res": {
+        "text": "Sebagai Mahasiswa, Anda dapat masuk ke dalam Course melalui **SIAT Student**:\n1. Masuk ke portal **student.unpad.ac.id**.\n\nUntuk langkah lengkapnya, silakan tonton video tutorial YouTube berikut atau baca buku panduan yang tersedia di laman **live.unpad.ac.id** pada bagian **'Informasi Panduan Live'**.",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "T1CiP7t_2xLl8tIqyYkA-1",
-        "target": "SpHGhkwYepaDPUml4Vun-1"
+        "target": "masuk_course_role_question"
       },
       {
-        "source": "SpHGhkwYepaDPUml4Vun-1",
-        "target": "SpHGhkwYepaDPUml4Vun-3"
+        "source": "masuk_course_role_question",
+        "target": "masuk_course_dosen"
       },
       {
-        "source": "SpHGhkwYepaDPUml4Vun-1",
-        "target": "SpHGhkwYepaDPUml4Vun-5"
+        "source": "masuk_course_role_question",
+        "target": "masuk_course_mahasiswa"
       },
       {
-        "source": "SpHGhkwYepaDPUml4Vun-3",
-        "target": "SpHGhkwYepaDPUml4Vun-7"
+        "source": "masuk_course_dosen",
+        "target": "masuk_course_dosen_res"
       },
       {
-        "source": "SpHGhkwYepaDPUml4Vun-5",
-        "target": "GaQC-DNsRzz4Nencyubd-3"
-      }
-    ],
-    "questions": [
-      {
-        "id": "T1CiP7t_2xLl8tIqyYkA-1",
-        "text": "Bagaimana cara masuk ke dalam course?"
-      },
-      {
-        "id": "SpHGhkwYepaDPUml4Vun-1",
-        "text": "Apakah anda dosen atau mahasiswa?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "SpHGhkwYepaDPUml4Vun-3",
-        "text": "Dosen"
-      },
-      {
-        "id": "SpHGhkwYepaDPUml4Vun-5",
-        "text": "Mahasiswa"
-      },
-      {
-        "id": "SpHGhkwYepaDPUml4Vun-7",
-        "text": "Civitas Unpad dapat masuk ke dalam course melalui SIAT Dosen di bagian menu \"Perkuliahan\" dan pilih \"Jadwal Mengajar\". Untuk lebih lengkapnya, Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: https://youtu.be/to0yp3uvaUY?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\""
-      },
-      {
-        "id": "GaQC-DNsRzz4Nencyubd-3",
-        "text": "Civitas Unpad dapat masuk ke dalam course melalui SIAT student.unpad Untuk lebih lengkapnya, Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: atau buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\""
-      },
-      {
-        "id": "10GjnckQzjk4duHbaqQs-1",
-        "text": "Untuk Dosen"
+        "source": "masuk_course_mahasiswa",
+        "target": "masuk_course_mahasiswa_res"
       }
     ]
   },
@@ -263,240 +148,138 @@
     "name": "Enroll",
     "nodes": {
       "dXrBW42aY8iMoSeRXM6q-1": {
-        "text": "Bagaimana cara enroll ke dalam course?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara melakukan enroll ke dalam Course?",
+        "is_question": false
       },
-      "dXrBW42aY8iMoSeRXM6q-2": {
-        "text": "Apakah anda dosen atau mahasiswa?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "enroll_role_question": {
+        "text": "Apakah Anda seorang Dosen atau Mahasiswa?",
+        "is_question": true
       },
-      "dXrBW42aY8iMoSeRXM6q-4": {
+      "enroll_dosen": {
         "text": "Dosen",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+        "is_question": true
       },
-      "dXrBW42aY8iMoSeRXM6q-6": {
+      "enroll_dosen_self": {
+        "text": "Melakukan enroll diri Anda sebagai Teacher",
+        "is_question": false
+      },
+      "enroll_dosen_self_res": {
+        "text": "Untuk enroll diri Anda sendiri sebagai Teacher:\n1. Masuk ke portal **SIAT Dosen**.\n2. Pilih menu **'Perkuliahan'** -> **'Jadwal Mengajar'**.\n3. Anda secara otomatis akan ter-enroll sebagai Teacher di Course yang bersangkutan.",
+        "is_question": false
+      },
+      "enroll_dosen_self_fail": {
+        "text": "Tetap tidak bisa?",
+        "is_question": true
+      },
+      "enroll_dosen_self_helpdesk": {
+        "text": "Jika Anda tetap mengalami kendala enroll sebagai Teacher, silakan hubungi **LiVE Helpdesk**.",
+        "is_question": false
+      },
+      "enroll_dosen_student": {
+        "text": "Mengenroll Mahasiswa ke dalam Course",
+        "is_question": false
+      },
+      "enroll_dosen_student_res": {
+        "text": "Anda dapat mengenroll mahasiswa dengan cara:\n- Meminta mahasiswa melakukan self-enroll melalui SIAT Student mereka masing-masing.\n- Melakukan enroll secara manual dari dalam Course.",
+        "is_question": false
+      },
+      "enroll_dosen_student_fail": {
+        "text": "Tetap tidak bisa?",
+        "is_question": true
+      },
+      "enroll_dosen_student_tutorial": {
+        "text": "Silakan tonton video tutorial YouTube cara mengenroll mahasiswa berikut:\nhttps://youtu.be/yxto15Kbchw\n\nAtau Anda dapat merujuk pada buku panduan resmi LiVE Unpad.",
+        "is_question": false
+      },
+      "enroll_dosen_student_fail2": {
+        "text": "Tetap tidak bisa?",
+        "is_question": true
+      },
+      "enroll_dosen_student_helpdesk": {
+        "text": "Jika masih terkendala, silakan hubungi **LiVE Helpdesk**.",
+        "is_question": false
+      },
+      "enroll_mahasiswa": {
         "text": "Mahasiswa",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+        "is_question": false
       },
-      "dXrBW42aY8iMoSeRXM6q-8": {
-        "text": "Civitas Unpad dapat melakukan enroll dengan masuk melalui akun SIAT Dosen di bagian menu \"Perkuliahan\" dan pilih \"Jadwal Mengajar\". Apabila masuk melalui link tersebut, Civitas dapat langsung ter-enroll sebagai teacher. Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: https://youtu.be/to0yp3uvaUY?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "enroll_mahasiswa_res": {
+        "text": "Sebagai Mahasiswa, Anda dapat melakukan enroll ke Course secara mandiri melalui portal **SIAT Student** Anda.",
+        "is_question": false
       },
-      "R-l5qZFzXr11IdwWjJVT-1": {
-        "text": "Tetap tidak bisa.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "enroll_mahasiswa_fail": {
+        "text": "Tetap tidak bisa?",
+        "is_question": true
       },
-      "R-l5qZFzXr11IdwWjJVT-3": {
-        "text": "Civitas Unpad dapat berkonsultasi kepada Helpdesk LiVE.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-1": {
-        "text": "Melakukan enroll sebagai teacher.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-3": {
-        "text": "Melakukan enroll mahasiswa ke dalam course.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-7": {
-        "text": "Civitas Unpad dapat meminta mahasiswa untuk melakukan enroll secara manual di dalam akun SIAT Student masing-masing.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-9": {
-        "text": "Tetap tidak bisa.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-11": {
-        "text": "Civitas Unpad dapat mengakses video tutorial cara mengenroll mahasiswa ke dalam course pada akun Youtube berikut: https://youtu.be/yxto15Kbchw?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-13": {
-        "text": "Tetap tidak bisa.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-17": {
-        "text": "Civitas Unpad dapat berkonsultasi kepada Helpdesk LiVE.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-18": {
-        "text": "Civitas Unpad dapat masuk ke dalam course dengan enroll melalui akun SIAT Student masing-masing.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-20": {
-        "text": "Tetap tidak bisa",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "YYoaAuAOPalCRsFU5I5b-22": {
-        "text": "Civitas Unpad dapat menghubungi dosen pengampu MK untuk dilakukan enroll secara manual ke dalam course.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "zoKCftPDNipOhe5iwGIU-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "enroll_mahasiswa_fail_res": {
+        "text": "Jika tetap tidak bisa enroll melalui SIAT Student, silakan hubungi Dosen Pengampu mata kuliah Anda untuk meminta beliau mengenroll Anda secara manual ke dalam Course.",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "dXrBW42aY8iMoSeRXM6q-1",
-        "target": "dXrBW42aY8iMoSeRXM6q-2"
+        "target": "enroll_role_question"
       },
       {
-        "source": "dXrBW42aY8iMoSeRXM6q-2",
-        "target": "dXrBW42aY8iMoSeRXM6q-4"
+        "source": "enroll_role_question",
+        "target": "enroll_dosen"
       },
       {
-        "source": "dXrBW42aY8iMoSeRXM6q-2",
-        "target": "dXrBW42aY8iMoSeRXM6q-6"
+        "source": "enroll_role_question",
+        "target": "enroll_mahasiswa"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-1",
-        "target": "dXrBW42aY8iMoSeRXM6q-8"
+        "source": "enroll_dosen",
+        "target": "enroll_dosen_self"
       },
       {
-        "source": "dXrBW42aY8iMoSeRXM6q-4",
-        "target": "YYoaAuAOPalCRsFU5I5b-1"
+        "source": "enroll_dosen",
+        "target": "enroll_dosen_student"
       },
       {
-        "source": "dXrBW42aY8iMoSeRXM6q-4",
-        "target": "YYoaAuAOPalCRsFU5I5b-3"
+        "source": "enroll_dosen_self",
+        "target": "enroll_dosen_self_res"
       },
       {
-        "source": "dXrBW42aY8iMoSeRXM6q-6",
-        "target": "YYoaAuAOPalCRsFU5I5b-18"
+        "source": "enroll_dosen_self_res",
+        "target": "enroll_dosen_self_fail"
       },
       {
-        "source": "dXrBW42aY8iMoSeRXM6q-8",
-        "target": "R-l5qZFzXr11IdwWjJVT-1"
+        "source": "enroll_dosen_self_fail",
+        "target": "enroll_dosen_self_helpdesk"
       },
       {
-        "source": "R-l5qZFzXr11IdwWjJVT-1",
-        "target": "R-l5qZFzXr11IdwWjJVT-3"
+        "source": "enroll_dosen_student",
+        "target": "enroll_dosen_student_res"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-3",
-        "target": "YYoaAuAOPalCRsFU5I5b-7"
+        "source": "enroll_dosen_student_res",
+        "target": "enroll_dosen_student_fail"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-7",
-        "target": "YYoaAuAOPalCRsFU5I5b-9"
+        "source": "enroll_dosen_student_fail",
+        "target": "enroll_dosen_student_tutorial"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-9",
-        "target": "YYoaAuAOPalCRsFU5I5b-11"
+        "source": "enroll_dosen_student_tutorial",
+        "target": "enroll_dosen_student_fail2"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-11",
-        "target": "YYoaAuAOPalCRsFU5I5b-13"
+        "source": "enroll_dosen_student_fail2",
+        "target": "enroll_dosen_student_helpdesk"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-13",
-        "target": "YYoaAuAOPalCRsFU5I5b-17"
+        "source": "enroll_mahasiswa",
+        "target": "enroll_mahasiswa_res"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-18",
-        "target": "YYoaAuAOPalCRsFU5I5b-20"
+        "source": "enroll_mahasiswa_res",
+        "target": "enroll_mahasiswa_fail"
       },
       {
-        "source": "YYoaAuAOPalCRsFU5I5b-22",
-        "target": "YYoaAuAOPalCRsFU5I5b-9"
-      },
-      {
-        "source": "YYoaAuAOPalCRsFU5I5b-20",
-        "target": "YYoaAuAOPalCRsFU5I5b-22"
-      }
-    ],
-    "questions": [
-      {
-        "id": "dXrBW42aY8iMoSeRXM6q-1",
-        "text": "Bagaimana cara enroll ke dalam course?"
-      },
-      {
-        "id": "dXrBW42aY8iMoSeRXM6q-2",
-        "text": "Apakah anda dosen atau mahasiswa?"
-      },
-      {
-        "id": "dXrBW42aY8iMoSeRXM6q-4",
-        "text": "Dosen"
-      },
-      {
-        "id": "dXrBW42aY8iMoSeRXM6q-6",
-        "text": "Mahasiswa"
-      }
-    ],
-    "answers": [
-      {
-        "id": "dXrBW42aY8iMoSeRXM6q-8",
-        "text": "Civitas Unpad dapat melakukan enroll dengan masuk melalui akun SIAT Dosen di bagian menu \"Perkuliahan\" dan pilih \"Jadwal Mengajar\". Apabila masuk melalui link tersebut, Civitas dapat langsung ter-enroll sebagai teacher. Civitas Unpad dapat mengakses video tutorial pada akun Youtube berikut: https://youtu.be/to0yp3uvaUY?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\""
-      },
-      {
-        "id": "R-l5qZFzXr11IdwWjJVT-1",
-        "text": "Tetap tidak bisa."
-      },
-      {
-        "id": "R-l5qZFzXr11IdwWjJVT-3",
-        "text": "Civitas Unpad dapat berkonsultasi kepada Helpdesk LiVE."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-1",
-        "text": "Melakukan enroll sebagai teacher."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-3",
-        "text": "Melakukan enroll mahasiswa ke dalam course."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-7",
-        "text": "Civitas Unpad dapat meminta mahasiswa untuk melakukan enroll secara manual di dalam akun SIAT Student masing-masing."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-9",
-        "text": "Tetap tidak bisa."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-11",
-        "text": "Civitas Unpad dapat mengakses video tutorial cara mengenroll mahasiswa ke dalam course pada akun Youtube berikut: https://youtu.be/yxto15Kbchw?feature=shared atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\""
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-13",
-        "text": "Tetap tidak bisa."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-17",
-        "text": "Civitas Unpad dapat berkonsultasi kepada Helpdesk LiVE."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-18",
-        "text": "Civitas Unpad dapat masuk ke dalam course dengan enroll melalui akun SIAT Student masing-masing."
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-20",
-        "text": "Tetap tidak bisa"
-      },
-      {
-        "id": "YYoaAuAOPalCRsFU5I5b-22",
-        "text": "Civitas Unpad dapat menghubungi dosen pengampu MK untuk dilakukan enroll secara manual ke dalam course."
-      },
-      {
-        "id": "zoKCftPDNipOhe5iwGIU-1",
-        "text": "Untuk Dosen"
+        "source": "enroll_mahasiswa_fail",
+        "target": "enroll_mahasiswa_fail_res"
       }
     ]
   },
@@ -504,302 +287,154 @@
     "name": "Menambahkan Aktivitas",
     "nodes": {
       "0naJWreVL6bufnB3jpqe-1": {
-        "text": "Bagaimana cara menambahkan fitur aktivitas dalam LiVE Unpad?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara menambahkan fitur aktivitas di LiVE Unpad?\n\n*(Khusus Dosen)*\n\nSilakan pilih jenis aktivitas yang ingin Anda tambahkan:",
+        "is_question": true
       },
-      "0naJWreVL6bufnB3jpqe-2": {
-        "text": "Civitas Unpad dapat mengakses berbagai tutorial untuk masuk ke dalam LiVE Unpad melalui akun Youtube @LiVEUnpadofficial atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\"",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_assignment": {
+        "text": "Assignment (Tugas)",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-1": {
-        "text": "Bagaimana cara menambahkan fitur assignment (tugas)?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "act_assignment_res": {
+        "text": "Untuk menambahkan fitur **Assignment (Tugas)**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/Fe2l2S4DzWA\n- Rujuk buku panduan LiVE Unpad halaman 43.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-3": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/Fe2l2S4DzWA?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_chat": {
+        "text": "Chat",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-5": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 43.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_chat_res": {
+        "text": "Untuk menambahkan fitur **Chat**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/rO0-1F-C5gQ\n- Rujuk buku panduan LiVE Unpad halaman 49.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-7": {
-        "text": "Bagaimana cara menambahkan fitur chat?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "act_choice": {
+        "text": "Choice (Pilihan)",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-9": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/rO0-1F-C5gQ?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_choice_res": {
+        "text": "Untuk menambahkan fitur **Choice (Pilihan)**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/tIrddi9BDJo\n- Rujuk buku panduan LiVE Unpad halaman 52.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-11": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 49.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_feedback": {
+        "text": "Feedback (Umpan Balik)",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-13": {
-        "text": "Bagaimana cara menambahkan fitur pilihan (choice)?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "act_feedback_res": {
+        "text": "Untuk menambahkan fitur **Feedback (Umpan Balik)**:\n- Rujuk buku panduan LiVE Unpad halaman 55.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-15": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/tIrddi9BDJo?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_forum": {
+        "text": "Forum",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-17": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 52.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_forum_res": {
+        "text": "Untuk menambahkan fitur **Forum**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/o0QEwB99L_c\n- Rujuk buku panduan LiVE Unpad halaman 60.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-20": {
-        "text": "Bagaimana cara menambahkan fitur Umpan Balik (feedback)?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "act_glossary": {
+        "text": "Glossary",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-23": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 55.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_glossary_res": {
+        "text": "Untuk menambahkan fitur **Glossary**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/GdvNPvlkoK0",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-26": {
-        "text": "Bagaimana cara menambahkan fitur Forum?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "act_lesson": {
+        "text": "Lesson",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-27": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/o0QEwB99L_c?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_lesson_res": {
+        "text": "Untuk menambahkan fitur **Lesson**:\n- Rujuk buku panduan LiVE Unpad halaman 67.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-29": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 60.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_wiki": {
+        "text": "WIKI",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-32": {
-        "text": "Bagaimana cara menambahkan fitur glossarry?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "act_wiki_res": {
+        "text": "Untuk menambahkan fitur **WIKI**:\n- Rujuk buku panduan LiVE Unpad halaman 73.",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-33": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/GdvNPvlkoK0?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "act_h5p": {
+        "text": "H5P",
+        "is_question": false
       },
-      "B3X-WoMQUAlE70fq4CIC-38": {
-        "text": "Bagaimana cara menambahkan Lesson Aktivitas?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "B3X-WoMQUAlE70fq4CIC-41": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 67.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "B3X-WoMQUAlE70fq4CIC-44": {
-        "text": "Bagaimana cara menambahkan fitur WIKI?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "B3X-WoMQUAlE70fq4CIC-47": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 73.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "B3X-WoMQUAlE70fq4CIC-50": {
-        "text": "Bagaimana cara menambahkan aktivitas H5P?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "rvZcZ-KZm-TxjQrlY2LT-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "act_h5p_res": {
+        "text": "Untuk menambahkan aktivitas **H5P**:\n- Silakan gunakan modul H5P yang tersedia di menu aktivitas Course untuk membuat konten interaktif (video tutorial tersedia).",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "0naJWreVL6bufnB3jpqe-2"
+        "target": "act_assignment"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-1"
+        "target": "act_chat"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-7"
+        "target": "act_choice"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-13"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-3"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-3",
-        "target": "B3X-WoMQUAlE70fq4CIC-5"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-7",
-        "target": "B3X-WoMQUAlE70fq4CIC-9"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-9",
-        "target": "B3X-WoMQUAlE70fq4CIC-11"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-13",
-        "target": "B3X-WoMQUAlE70fq4CIC-15"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-15",
-        "target": "B3X-WoMQUAlE70fq4CIC-17"
+        "target": "act_feedback"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-20"
+        "target": "act_forum"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-26"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-26",
-        "target": "B3X-WoMQUAlE70fq4CIC-27"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-27",
-        "target": "B3X-WoMQUAlE70fq4CIC-29"
+        "target": "act_glossary"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-32"
-      },
-      {
-        "source": "B3X-WoMQUAlE70fq4CIC-32",
-        "target": "B3X-WoMQUAlE70fq4CIC-33"
+        "target": "act_lesson"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-38"
+        "target": "act_wiki"
       },
       {
         "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-44"
+        "target": "act_h5p"
       },
       {
-        "source": "0naJWreVL6bufnB3jpqe-1",
-        "target": "B3X-WoMQUAlE70fq4CIC-50"
-      }
-    ],
-    "questions": [
-      {
-        "id": "0naJWreVL6bufnB3jpqe-1",
-        "text": "Bagaimana cara menambahkan fitur aktivitas dalam LiVE Unpad?"
+        "source": "act_assignment",
+        "target": "act_assignment_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-1",
-        "text": "Bagaimana cara menambahkan fitur assignment (tugas)?"
+        "source": "act_chat",
+        "target": "act_chat_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-7",
-        "text": "Bagaimana cara menambahkan fitur chat?"
+        "source": "act_choice",
+        "target": "act_choice_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-13",
-        "text": "Bagaimana cara menambahkan fitur pilihan (choice)?"
+        "source": "act_feedback",
+        "target": "act_feedback_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-20",
-        "text": "Bagaimana cara menambahkan fitur Umpan Balik (feedback)?"
+        "source": "act_forum",
+        "target": "act_forum_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-26",
-        "text": "Bagaimana cara menambahkan fitur Forum?"
+        "source": "act_glossary",
+        "target": "act_glossary_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-32",
-        "text": "Bagaimana cara menambahkan fitur glossarry?"
+        "source": "act_lesson",
+        "target": "act_lesson_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-38",
-        "text": "Bagaimana cara menambahkan Lesson Aktivitas?"
+        "source": "act_wiki",
+        "target": "act_wiki_res"
       },
       {
-        "id": "B3X-WoMQUAlE70fq4CIC-44",
-        "text": "Bagaimana cara menambahkan fitur WIKI?"
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-50",
-        "text": "Bagaimana cara menambahkan aktivitas H5P?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "0naJWreVL6bufnB3jpqe-2",
-        "text": "Civitas Unpad dapat mengakses berbagai tutorial untuk masuk ke dalam LiVE Unpad melalui akun Youtube @LiVEUnpadofficial atau mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\""
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-3",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/Fe2l2S4DzWA?feature=shared"
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-5",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 43."
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-9",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/rO0-1F-C5gQ?feature=shared"
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-11",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 49."
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-15",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/tIrddi9BDJo?feature=shared"
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-17",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 52."
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-23",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 55."
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-27",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/o0QEwB99L_c?feature=shared"
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-29",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 60."
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-33",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/GdvNPvlkoK0?feature=shared"
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-41",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 67."
-      },
-      {
-        "id": "B3X-WoMQUAlE70fq4CIC-47",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 73."
-      },
-      {
-        "id": "rvZcZ-KZm-TxjQrlY2LT-1",
-        "text": "Untuk Dosen"
+        "source": "act_h5p",
+        "target": "act_h5p_res"
       }
     ]
   },
@@ -807,240 +442,106 @@
     "name": "Menambahkan Resources",
     "nodes": {
       "LRuQX09GwBHCN9T-BBus-1": {
-        "text": "Bagaimana cara menambahkan fitur resources dalam LiVE Unpad?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara menambahkan fitur Resource di LiVE Unpad?\n\n*(Khusus Dosen)*\n\nSilakan pilih jenis resource yang ingin Anda tambahkan:",
+        "is_question": true
       },
-      "vjHD5QqyoDn4S6f5BRA0-1": {
-        "text": "Bagaimana cara menambahkan fitur buku?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "res_book": {
+        "text": "Buku (Book)",
+        "is_question": false
       },
-      "-EsbEnwR1loKgbgjnU9c-1": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/MvALiq1ok4Q?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_book_res": {
+        "text": "Untuk menambahkan resource **Buku (Book)**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/MvALiq1ok4Q\n- Rujuk buku panduan LiVE Unpad halaman 78.",
+        "is_question": false
       },
-      "J1u5oel8p_lMd9OK8ul9-1": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_file": {
+        "text": "File",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-1": {
-        "text": "Bagaimana cara menambahkan fitur file?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "res_file_res": {
+        "text": "Untuk menambahkan resource **File**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/ZbziRGk7WA4\n- Rujuk buku panduan LiVE Unpad halaman 78.",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-3": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ZbziRGk7WA4?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_folder": {
+        "text": "Folder",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-5": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_folder_res": {
+        "text": "Untuk menambahkan resource **Folder**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/UYcE6XHUgpM\n- Rujuk buku panduan LiVE Unpad halaman 78.",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-7": {
-        "text": "Bagaimana cara menambahkan fitur folder?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "res_label": {
+        "text": "Label",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-9": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/UYcE6XHUgpM?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_label_res": {
+        "text": "Untuk menambahkan resource **Label**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/l0OiFlWBhG0\n- Rujuk buku panduan LiVE Unpad halaman 83.",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-11": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_page": {
+        "text": "Page",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-13": {
-        "text": "Bagaimana cara menambahkan fitur label?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "res_page_res": {
+        "text": "Untuk menambahkan resource **Page**:\n- Anda dapat menambahkan modul Page langsung melalui menu tambahkan resource di Course Anda (panduan tersedia).",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-15": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/l0OiFlWBhG0?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "res_url": {
+        "text": "URL",
+        "is_question": false
       },
-      "2C76L8LqFJQl2WzdQwZF-17": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 83.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "2C76L8LqFJQl2WzdQwZF-21": {
-        "text": "Bagaimana cara menambahkan fitur page?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "2C76L8LqFJQl2WzdQwZF-27": {
-        "text": "Bagaimana cara menambahkan fitur URL?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "2C76L8LqFJQl2WzdQwZF-28": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/vKykX7Q9LMk?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "2C76L8LqFJQl2WzdQwZF-30": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "JKHnvIrkUaHviq7Dj3-4-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "res_url_res": {
+        "text": "Untuk menambahkan resource **URL**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/vKykX7Q9LMk\n- Rujuk buku panduan LiVE Unpad halaman 78.",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "vjHD5QqyoDn4S6f5BRA0-1"
+        "target": "res_book"
       },
       {
         "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "2C76L8LqFJQl2WzdQwZF-1"
+        "target": "res_file"
       },
       {
         "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "2C76L8LqFJQl2WzdQwZF-7"
+        "target": "res_folder"
       },
       {
         "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "2C76L8LqFJQl2WzdQwZF-13"
+        "target": "res_label"
       },
       {
         "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "vjHD5QqyoDn4S6f5BRA0-1"
-      },
-      {
-        "source": "vjHD5QqyoDn4S6f5BRA0-1",
-        "target": "-EsbEnwR1loKgbgjnU9c-1"
-      },
-      {
-        "source": "-EsbEnwR1loKgbgjnU9c-1",
-        "target": "J1u5oel8p_lMd9OK8ul9-1"
-      },
-      {
-        "source": "2C76L8LqFJQl2WzdQwZF-1",
-        "target": "2C76L8LqFJQl2WzdQwZF-3"
-      },
-      {
-        "source": "2C76L8LqFJQl2WzdQwZF-3",
-        "target": "2C76L8LqFJQl2WzdQwZF-5"
-      },
-      {
-        "source": "2C76L8LqFJQl2WzdQwZF-7",
-        "target": "2C76L8LqFJQl2WzdQwZF-9"
-      },
-      {
-        "source": "2C76L8LqFJQl2WzdQwZF-9",
-        "target": "2C76L8LqFJQl2WzdQwZF-11"
-      },
-      {
-        "source": "2C76L8LqFJQl2WzdQwZF-13",
-        "target": "2C76L8LqFJQl2WzdQwZF-15"
-      },
-      {
-        "source": "2C76L8LqFJQl2WzdQwZF-15",
-        "target": "2C76L8LqFJQl2WzdQwZF-17"
+        "target": "res_page"
       },
       {
         "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "2C76L8LqFJQl2WzdQwZF-21"
+        "target": "res_url"
       },
       {
-        "source": "LRuQX09GwBHCN9T-BBus-1",
-        "target": "2C76L8LqFJQl2WzdQwZF-27"
+        "source": "res_book",
+        "target": "res_book_res"
       },
       {
-        "source": "2C76L8LqFJQl2WzdQwZF-27",
-        "target": "2C76L8LqFJQl2WzdQwZF-28"
+        "source": "res_file",
+        "target": "res_file_res"
       },
       {
-        "source": "2C76L8LqFJQl2WzdQwZF-28",
-        "target": "2C76L8LqFJQl2WzdQwZF-30"
-      }
-    ],
-    "questions": [
-      {
-        "id": "LRuQX09GwBHCN9T-BBus-1",
-        "text": "Bagaimana cara menambahkan fitur resources dalam LiVE Unpad?"
+        "source": "res_folder",
+        "target": "res_folder_res"
       },
       {
-        "id": "vjHD5QqyoDn4S6f5BRA0-1",
-        "text": "Bagaimana cara menambahkan fitur buku?"
+        "source": "res_label",
+        "target": "res_label_res"
       },
       {
-        "id": "2C76L8LqFJQl2WzdQwZF-1",
-        "text": "Bagaimana cara menambahkan fitur file?"
+        "source": "res_page",
+        "target": "res_page_res"
       },
       {
-        "id": "2C76L8LqFJQl2WzdQwZF-7",
-        "text": "Bagaimana cara menambahkan fitur folder?"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-13",
-        "text": "Bagaimana cara menambahkan fitur label?"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-21",
-        "text": "Bagaimana cara menambahkan fitur page?"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-27",
-        "text": "Bagaimana cara menambahkan fitur URL?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "-EsbEnwR1loKgbgjnU9c-1",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/MvALiq1ok4Q?feature=shared"
-      },
-      {
-        "id": "J1u5oel8p_lMd9OK8ul9-1",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78."
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-3",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ZbziRGk7WA4?feature=shared"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-5",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78."
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-9",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/UYcE6XHUgpM?feature=shared"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-11",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78."
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-15",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/l0OiFlWBhG0?feature=shared"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-17",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 83."
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-28",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/vKykX7Q9LMk?feature=shared"
-      },
-      {
-        "id": "2C76L8LqFJQl2WzdQwZF-30",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 78."
-      },
-      {
-        "id": "JKHnvIrkUaHviq7Dj3-4-1",
-        "text": "Untuk Dosen"
+        "source": "res_url",
+        "target": "res_url_res"
       }
     ]
   },
@@ -1048,292 +549,122 @@
     "name": "Quiz",
     "nodes": {
       "eQU1HDJ9kKaACiZ6EsR5-6": {
-        "text": "Bagaimana cara menambahkan fitur Quiz dalam LiVE Unpad?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara menambahkan fitur Quiz di LiVE Unpad?\n\n*(Khusus Dosen)*\n\nSilakan pilih jenis soal kuis yang ingin Anda tambahkan:",
+        "is_question": true
       },
-      "eQU1HDJ9kKaACiZ6EsR5-8": {
-        "text": "Bagaimana cara menambahkan kuis fill in the blank?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "quiz_fill_in_the_blank": {
+        "text": "Fill in the Blank",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-10": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/8QVbTen_HSw?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_fill_in_the_blank_res": {
+        "text": "Untuk menambahkan kuis **Fill in the Blank**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/8QVbTen_HSw\n- Rujuk buku panduan LiVE Unpad halaman 114.",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-11": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 114.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_import_soal": {
+        "text": "Import Soal",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-13": {
-        "text": "Bagaimana cara import soal ke laman quiz?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "quiz_import_soal_res": {
+        "text": "Untuk melakukan **Import Soal**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/SVJQRHDDY6s\n- Rujuk buku panduan LiVE Unpad halaman 118.",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-15": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/SVJQRHDDY6s?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_essay": {
+        "text": "Essay",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-16": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 118.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_essay_res": {
+        "text": "Untuk menambahkan kuis **Essay**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/m8GruWZ16DU\n- Rujuk buku panduan LiVE Unpad halaman 97.",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-18": {
-        "text": "Bagaimana cara menambahkan kuis essay?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "quiz_mc_1_correct": {
+        "text": "Multiple Choice (1 Jawaban Benar)",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-20": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/m8GruWZ16DU?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_mc_1_correct_res": {
+        "text": "Untuk menambahkan kuis **Multiple Choice (1 Jawaban Benar)**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/nfiUaonq0PU\n- Rujuk buku panduan LiVE Unpad halaman 104.",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-21": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 97.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_mc_multi_correct": {
+        "text": "Multiple Choice (Lebih Dari 1 Jawaban Benar)",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-23": {
-        "text": "Bagaimana cara menambahkan kuis multiple choice?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "quiz_mc_multi_correct_res": {
+        "text": "Untuk menambahkan kuis **Multiple Choice (Lebih Dari 1 Jawaban Benar)**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/DI5wwvtOOQU\n- Rujuk buku panduan LiVE Unpad halaman 107.",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-25": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/nfiUaonq0PU?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_true_false": {
+        "text": "True or False",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-26": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 104.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "quiz_true_false_res": {
+        "text": "Untuk menambahkan kuis **True or False**:\n- Anda dapat menambahkan jenis soal True or False langsung melalui bank soal di Course Anda (panduan tersedia).",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-29": {
-        "text": "Bagaimana cara menambahkan kuis true or false?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "quiz_matching": {
+        "text": "Matching (Mencocokkan)",
+        "is_question": false
       },
-      "eQU1HDJ9kKaACiZ6EsR5-35": {
-        "text": "Bagaimana cara menambahkan kuis matching (mencocokkan)?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "eQU1HDJ9kKaACiZ6EsR5-37": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/MoDJ59opDIQ?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "eQU1HDJ9kKaACiZ6EsR5-38": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 100.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "eQU1HDJ9kKaACiZ6EsR5-39": {
-        "text": "Multiple choice dengan jawaban benar lebih dari 1",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
-      },
-      "eQU1HDJ9kKaACiZ6EsR5-41": {
-        "text": "Multiple choice dengan 1 jawaban benar",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;"
-      },
-      "eQU1HDJ9kKaACiZ6EsR5-44": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/DI5wwvtOOQU?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "eQU1HDJ9kKaACiZ6EsR5-46": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 107.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "D523ffA27p2fuqLafw_a-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "quiz_matching_res": {
+        "text": "Untuk menambahkan kuis **Matching (Mencocokkan)**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/MoDJ59opDIQ\n- Rujuk buku panduan LiVE Unpad halaman 100.",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-8"
+        "target": "quiz_fill_in_the_blank"
       },
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-13"
+        "target": "quiz_import_soal"
       },
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-18"
+        "target": "quiz_essay"
       },
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-23"
+        "target": "quiz_mc_1_correct"
       },
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-8"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-8",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-10"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-10",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-11"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-13",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-15"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-15",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-16"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-18",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-20"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-20",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-21"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-23",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-39"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-23",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-41"
-      },
-      {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-25",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-26"
+        "target": "quiz_mc_multi_correct"
       },
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-29"
+        "target": "quiz_true_false"
       },
       {
         "source": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-35"
+        "target": "quiz_matching"
       },
       {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-35",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-37"
+        "source": "quiz_fill_in_the_blank",
+        "target": "quiz_fill_in_the_blank_res"
       },
       {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-37",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-38"
+        "source": "quiz_import_soal",
+        "target": "quiz_import_soal_res"
       },
       {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-39",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-44"
+        "source": "quiz_essay",
+        "target": "quiz_essay_res"
       },
       {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-41",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-25"
+        "source": "quiz_mc_1_correct",
+        "target": "quiz_mc_1_correct_res"
       },
       {
-        "source": "eQU1HDJ9kKaACiZ6EsR5-44",
-        "target": "eQU1HDJ9kKaACiZ6EsR5-46"
-      }
-    ],
-    "questions": [
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-6",
-        "text": "Bagaimana cara menambahkan fitur Quiz dalam LiVE Unpad?"
+        "source": "quiz_mc_multi_correct",
+        "target": "quiz_mc_multi_correct_res"
       },
       {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-8",
-        "text": "Bagaimana cara menambahkan kuis fill in the blank?"
+        "source": "quiz_true_false",
+        "target": "quiz_true_false_res"
       },
       {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-13",
-        "text": "Bagaimana cara import soal ke laman quiz?"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-18",
-        "text": "Bagaimana cara menambahkan kuis essay?"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-23",
-        "text": "Bagaimana cara menambahkan kuis multiple choice?"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-29",
-        "text": "Bagaimana cara menambahkan kuis true or false?"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-35",
-        "text": "Bagaimana cara menambahkan kuis matching (mencocokkan)?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-10",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/8QVbTen_HSw?feature=shared"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-11",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 114."
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-15",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/SVJQRHDDY6s?feature=shared"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-16",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 118."
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-20",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/m8GruWZ16DU?feature=shared"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-21",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 97."
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-25",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/nfiUaonq0PU?feature=shared"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-26",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 104."
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-37",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/MoDJ59opDIQ?feature=shared"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-38",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 100."
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-39",
-        "text": "Multiple choice dengan jawaban benar lebih dari 1"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-41",
-        "text": "Multiple choice dengan 1 jawaban benar"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-44",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/DI5wwvtOOQU?feature=shared"
-      },
-      {
-        "id": "eQU1HDJ9kKaACiZ6EsR5-46",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 107."
-      },
-      {
-        "id": "D523ffA27p2fuqLafw_a-1",
-        "text": "Untuk Dosen"
+        "source": "quiz_matching",
+        "target": "quiz_matching_res"
       }
     ]
   },
@@ -1341,279 +672,122 @@
     "name": "Gradebook",
     "nodes": {
       "ocxWwH8_N_tSz0td5z8m-6": {
-        "text": "Bagaimana cara mengatur penilaian (gradebook) di LiVE Unpad?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara mengatur penilaian (Gradebook) di LiVE Unpad?\n\n*(Khusus Dosen)*\n\nSilakan pilih topik pengelolaan Gradebook yang Anda butuhkan:",
+        "is_question": true
       },
-      "ocxWwH8_N_tSz0td5z8m-8": {
-        "text": "Bagaimana cara menambahkan skala di gradebook?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "grade_scale": {
+        "text": "Tambah Skala",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-10": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/pXjaXTQ30so?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_scale_res": {
+        "text": "Untuk menambahkan **Skala Penilaian** di Gradebook:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/pXjaXTQ30so\n- Rujuk buku panduan LiVE Unpad halaman 136.",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-11": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 136.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_letter": {
+        "text": "Tambah Huruf Mutu",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-13": {
-        "text": "Bagaimana cara menambahkan huruf mutu di gradebook?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "grade_letter_res": {
+        "text": "Untuk menambahkan **Huruf Mutu** di Gradebook:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/plm-bBks130\n- Rujuk buku panduan LiVE Unpad halaman 140.",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-15": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/plm-bBks130?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_weight": {
+        "text": "Pembobotan Nilai",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-16": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 140.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_weight_res": {
+        "text": "Untuk mengatur **Pembobotan Nilai** di Gradebook:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/zpZOFAK86dY\n- Rujuk buku panduan LiVE Unpad halaman 143.",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-18": {
-        "text": "Bagaimana cara mengatur pembobotan nilai di dalam gradebook?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "grade_intro": {
+        "text": "Pendahuluan Gradebook",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-20": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/zpZOFAK86dY?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_intro_res": {
+        "text": "Untuk **Pendahuluan/Pengenalan Gradebook**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/YZaMGHPry4E\n- Rujuk buku panduan LiVE Unpad halaman 134.",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-21": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 143.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_activity": {
+        "text": "Mengatur Aktivitas untuk Gradebook",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-24": {
-        "text": "Pendahuluan ke penilaian/gradebook LiVE Unpad",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "grade_activity_res": {
+        "text": "Untuk **Mengatur Aktivitas Penilaian**:\n- Konfigurasikan pengaturan nilai pada masing-masing aktivitas (Tugas/Kuis) agar masuk ke dalam Gradebook secara otomatis (panduan lengkap tersedia).",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-30": {
-        "text": "Bagaimana cara mengatur aktivitas untuk gradebook/penilaian?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "grade_category": {
+        "text": "Tambah Kategori",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-36": {
-        "text": "Bagaimana cara menambahkan kategori di dalam gradebook?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "grade_category_res": {
+        "text": "Untuk menambahkan **Kategori Nilai** di Gradebook:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/IXnmA8ZcYio\n- Rujuk buku panduan LiVE Unpad halaman 144.",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-38": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/IXnmA8ZcYio?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "grade_rubric": {
+        "text": "Rubrik",
+        "is_question": false
       },
-      "ocxWwH8_N_tSz0td5z8m-39": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 144.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "ocxWwH8_N_tSz0td5z8m-45": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/YZaMGHPry4E?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "ocxWwH8_N_tSz0td5z8m-46": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 134.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "ocxWwH8_N_tSz0td5z8m-48": {
-        "text": "Bagaimana cara menggunakan rubrik di gradebook?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "ocxWwH8_N_tSz0td5z8m-49": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/hv21mk1QHTI?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "ocxWwH8_N_tSz0td5z8m-51": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 144.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "s8abAw2KkNxml91deny4-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "grade_rubric_res": {
+        "text": "Untuk menambahkan **Rubrik Penilaian**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/hv21mk1QHTI\n- Rujuk buku panduan LiVE Unpad halaman 144.",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-8"
+        "target": "grade_scale"
       },
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-13"
+        "target": "grade_letter"
       },
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-18"
+        "target": "grade_weight"
       },
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-24"
+        "target": "grade_intro"
       },
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-8"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-8",
-        "target": "ocxWwH8_N_tSz0td5z8m-10"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-10",
-        "target": "ocxWwH8_N_tSz0td5z8m-11"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-13",
-        "target": "ocxWwH8_N_tSz0td5z8m-15"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-15",
-        "target": "ocxWwH8_N_tSz0td5z8m-16"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-18",
-        "target": "ocxWwH8_N_tSz0td5z8m-20"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-20",
-        "target": "ocxWwH8_N_tSz0td5z8m-21"
-      },
-      {
-        "source": "ocxWwH8_N_tSz0td5z8m-24",
-        "target": "ocxWwH8_N_tSz0td5z8m-45"
+        "target": "grade_activity"
       },
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-30"
+        "target": "grade_category"
       },
       {
         "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-36"
+        "target": "grade_rubric"
       },
       {
-        "source": "ocxWwH8_N_tSz0td5z8m-36",
-        "target": "ocxWwH8_N_tSz0td5z8m-38"
+        "source": "grade_scale",
+        "target": "grade_scale_res"
       },
       {
-        "source": "ocxWwH8_N_tSz0td5z8m-38",
-        "target": "ocxWwH8_N_tSz0td5z8m-39"
+        "source": "grade_letter",
+        "target": "grade_letter_res"
       },
       {
-        "source": "ocxWwH8_N_tSz0td5z8m-45",
-        "target": "ocxWwH8_N_tSz0td5z8m-46"
+        "source": "grade_weight",
+        "target": "grade_weight_res"
       },
       {
-        "source": "ocxWwH8_N_tSz0td5z8m-6",
-        "target": "ocxWwH8_N_tSz0td5z8m-48"
+        "source": "grade_intro",
+        "target": "grade_intro_res"
       },
       {
-        "source": "ocxWwH8_N_tSz0td5z8m-48",
-        "target": "ocxWwH8_N_tSz0td5z8m-49"
+        "source": "grade_activity",
+        "target": "grade_activity_res"
       },
       {
-        "source": "ocxWwH8_N_tSz0td5z8m-49",
-        "target": "ocxWwH8_N_tSz0td5z8m-51"
-      }
-    ],
-    "questions": [
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-6",
-        "text": "Bagaimana cara mengatur penilaian (gradebook) di LiVE Unpad?"
+        "source": "grade_category",
+        "target": "grade_category_res"
       },
       {
-        "id": "ocxWwH8_N_tSz0td5z8m-8",
-        "text": "Bagaimana cara menambahkan skala di gradebook?"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-13",
-        "text": "Bagaimana cara menambahkan huruf mutu di gradebook?"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-18",
-        "text": "Bagaimana cara mengatur pembobotan nilai di dalam gradebook?"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-24",
-        "text": "Pendahuluan ke penilaian/gradebook LiVE Unpad"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-30",
-        "text": "Bagaimana cara mengatur aktivitas untuk gradebook/penilaian?"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-36",
-        "text": "Bagaimana cara menambahkan kategori di dalam gradebook?"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-48",
-        "text": "Bagaimana cara menggunakan rubrik di gradebook?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-10",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/pXjaXTQ30so?feature=shared"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-11",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 136."
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-15",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/plm-bBks130?feature=shared"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-16",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 140."
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-20",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/zpZOFAK86dY?feature=shared"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-21",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 143."
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-38",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/IXnmA8ZcYio?feature=shared"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-39",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 144."
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-45",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/YZaMGHPry4E?feature=shared"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-46",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 134."
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-49",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/hv21mk1QHTI?feature=shared"
-      },
-      {
-        "id": "ocxWwH8_N_tSz0td5z8m-51",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 144."
-      },
-      {
-        "id": "s8abAw2KkNxml91deny4-1",
-        "text": "Untuk Dosen"
+        "source": "grade_rubric",
+        "target": "grade_rubric_res"
       }
     ]
   },
@@ -1621,581 +795,261 @@
     "name": "Panopto",
     "nodes": {
       "8KYLmkby_ry8VcUU_vcJ-6": {
-        "text": "Bagaimana cara mengintegrasikan penggunaan Panopto dengan LiVE Unpad?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
+        "text": "Bagaimana cara mengintegrasikan Panopto dengan LiVE Unpad?\n\n*(Khusus Dosen)*\n\nSilakan pilih panduan Panopto yang Anda butuhkan:",
+        "is_question": true
       },
-      "8KYLmkby_ry8VcUU_vcJ-8": {
-        "text": "Bagaimana cara mendownload panopto for Mac/Windows?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "panopto_download": {
+        "text": "Download Panopto (Mac/Windows)",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-10": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/KXMMXhAvPRA?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_download_res": {
+        "text": "Untuk mendownload Panopto for Mac/Windows:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/KXMMXhAvPRA\n- Rujuk buku panduan LiVE Unpad halaman 144.",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-11": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 144.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_stats": {
+        "text": "Cek Statistik Video",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-13": {
-        "text": "Bagaimana cara mengecek statistik video panopto?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "panopto_stats_res": {
+        "text": "Untuk mengecek statistik video Panopto:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/dn4RiCSDvvw\n- Rujuk buku panduan LiVE Unpad halaman 148.",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-15": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/dn4RiCSDvvw?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_record": {
+        "text": "Record Video Bahan Ajar",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-16": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 148.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_record_res": {
+        "text": "Untuk merekam video bahan ajar menggunakan Panopto:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/cNE_GPYdFY4\n- Rujuk buku panduan LiVE Unpad halaman 146.",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-18": {
-        "text": "Bagaimana cara merecord video bahan ajar pada panopto?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "panopto_upload": {
+        "text": "Upload Video",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-20": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/cNE_GPYdFY4?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_upload_res": {
+        "text": "Untuk meng-upload video bahan ajar ke Panopto:\n- Anda dapat meng-upload video langsung dari pustaka Panopto (pilih folder Course Anda lalu klik 'Create' -> 'Upload media').",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-21": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 146.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_add_block": {
+        "text": "Add Block Panopto ke LiVE",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-23": {
-        "text": "Bagaimana cara upload video bahan ajar pada panopto?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "panopto_add_block_res": {
+        "text": "Untuk mengintegrasikan (Add Block) Panopto ke halaman LiVE:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/1BFPOZDLucc\n- Rujuk buku panduan LiVE Unpad halaman 146.",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-26": {
-        "text": "Bagaimana cara mengintegrasikan (Add block) Panopto dalam LiVE Unpad?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "panopto_share": {
+        "text": "Share Video",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-32": {
-        "text": "Bagaimana cara melakukan share video panopto?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+      "panopto_share_res": {
+        "text": "Untuk membagikan (Share) video Panopto:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/56fuvGPtJ4g\n- Rujuk buku panduan LiVE Unpad halaman 147.",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-34": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/56fuvGPtJ4g?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_edit": {
+        "text": "Edit Video",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-35": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 147.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_edit_res": {
+        "text": "Untuk mengedit video Panopto:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/mA4D8hKMDIg\n- Rujuk buku panduan LiVE Unpad halaman 147.",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-37": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/1BFPOZDLucc?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "panopto_add_content": {
+        "text": "Tambah Konten ke Video",
+        "is_question": false
       },
-      "8KYLmkby_ry8VcUU_vcJ-38": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 146.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "8KYLmkby_ry8VcUU_vcJ-41": {
-        "text": "Bagaimana cara mengedit video panopto?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "8KYLmkby_ry8VcUU_vcJ-43": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/mA4D8hKMDIg?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "8KYLmkby_ry8VcUU_vcJ-44": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 147.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "8KYLmkby_ry8VcUU_vcJ-46": {
-        "text": "Bagaimana cara menambahkan konten pada video panopto?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;"
-      },
-      "NvlPGKLisY0Rtt0MBtMs-1": {
-        "text": "Untuk Dosen",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;"
+      "panopto_add_content_res": {
+        "text": "Untuk menambahkan konten interaktif (seperti kuis atau link) di dalam video Panopto:\n- Anda dapat menggunakan editor Panopto untuk menyelipkan kuis di sela-sela durasi video (panduan lengkap tersedia).",
+        "is_question": false
       }
     },
     "edges": [
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-8"
+        "target": "panopto_download"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-13"
+        "target": "panopto_stats"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-18"
+        "target": "panopto_record"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-23"
+        "target": "panopto_upload"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-8"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-8",
-        "target": "8KYLmkby_ry8VcUU_vcJ-10"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-10",
-        "target": "8KYLmkby_ry8VcUU_vcJ-11"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-13",
-        "target": "8KYLmkby_ry8VcUU_vcJ-15"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-15",
-        "target": "8KYLmkby_ry8VcUU_vcJ-16"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-18",
-        "target": "8KYLmkby_ry8VcUU_vcJ-20"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-20",
-        "target": "8KYLmkby_ry8VcUU_vcJ-21"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-23",
-        "target": "8KYLmkby_ry8VcUU_vcJ-37"
+        "target": "panopto_add_block"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-26"
+        "target": "panopto_share"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-32"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-32",
-        "target": "8KYLmkby_ry8VcUU_vcJ-34"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-34",
-        "target": "8KYLmkby_ry8VcUU_vcJ-35"
-      },
-      {
-        "source": "8KYLmkby_ry8VcUU_vcJ-37",
-        "target": "8KYLmkby_ry8VcUU_vcJ-38"
+        "target": "panopto_edit"
       },
       {
         "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-41"
+        "target": "panopto_add_content"
       },
       {
-        "source": "8KYLmkby_ry8VcUU_vcJ-41",
-        "target": "8KYLmkby_ry8VcUU_vcJ-43"
+        "source": "panopto_download",
+        "target": "panopto_download_res"
       },
       {
-        "source": "8KYLmkby_ry8VcUU_vcJ-43",
-        "target": "8KYLmkby_ry8VcUU_vcJ-44"
+        "source": "panopto_stats",
+        "target": "panopto_stats_res"
       },
       {
-        "source": "8KYLmkby_ry8VcUU_vcJ-6",
-        "target": "8KYLmkby_ry8VcUU_vcJ-46"
-      }
-    ],
-    "questions": [
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-6",
-        "text": "Bagaimana cara mengintegrasikan penggunaan Panopto dengan LiVE Unpad?"
+        "source": "panopto_record",
+        "target": "panopto_record_res"
       },
       {
-        "id": "8KYLmkby_ry8VcUU_vcJ-8",
-        "text": "Bagaimana cara mendownload panopto for Mac/Windows?"
+        "source": "panopto_upload",
+        "target": "panopto_upload_res"
       },
       {
-        "id": "8KYLmkby_ry8VcUU_vcJ-13",
-        "text": "Bagaimana cara mengecek statistik video panopto?"
+        "source": "panopto_add_block",
+        "target": "panopto_add_block_res"
       },
       {
-        "id": "8KYLmkby_ry8VcUU_vcJ-18",
-        "text": "Bagaimana cara merecord video bahan ajar pada panopto?"
+        "source": "panopto_share",
+        "target": "panopto_share_res"
       },
       {
-        "id": "8KYLmkby_ry8VcUU_vcJ-23",
-        "text": "Bagaimana cara upload video bahan ajar pada panopto?"
+        "source": "panopto_edit",
+        "target": "panopto_edit_res"
       },
       {
-        "id": "8KYLmkby_ry8VcUU_vcJ-26",
-        "text": "Bagaimana cara mengintegrasikan (Add block) Panopto dalam LiVE Unpad?"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-32",
-        "text": "Bagaimana cara melakukan share video panopto?"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-41",
-        "text": "Bagaimana cara mengedit video panopto?"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-46",
-        "text": "Bagaimana cara menambahkan konten pada video panopto?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-10",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/KXMMXhAvPRA?feature=shared"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-11",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 144."
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-15",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/dn4RiCSDvvw?feature=shared"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-16",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 148."
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-20",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/cNE_GPYdFY4?feature=shared"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-21",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 146."
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-34",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/56fuvGPtJ4g?feature=shared"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-35",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 147."
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-37",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/1BFPOZDLucc?feature=shared"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-38",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 146."
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-43",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/mA4D8hKMDIg?feature=shared"
-      },
-      {
-        "id": "8KYLmkby_ry8VcUU_vcJ-44",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 147."
-      },
-      {
-        "id": "NvlPGKLisY0Rtt0MBtMs-1",
-        "text": "Untuk Dosen"
+        "source": "panopto_add_content",
+        "target": "panopto_add_content_res"
       }
     ]
   },
   "Mahasiswa": {
     "name": "Mahasiswa",
     "nodes": {
-      "0M6Q0_m1u-Kp31uyMp7Y-1": {
-        "text": "Bagaimana cara melakukan submit assignment (tugas)?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
-      },
-      "Qw8Cza4JAHxVNatNtK5L-1": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/4l4m6tTkLZQ?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "TbaGbQ_XiF8c29XMoCXL-1": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 14.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
       "TbaGbQ_XiF8c29XMoCXL-2": {
-        "text": "Panduan Penggunaan LiVE Untuk mahasiswa?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;"
+        "text": "Panduan Penggunaan LiVE khusus untuk Mahasiswa.\n\nSilakan pilih topik panduan yang Anda butuhkan:",
+        "is_question": true
       },
-      "TbaGbQ_XiF8c29XMoCXL-4": {
-        "text": "Bagaimana cara menambahkan discussion dalam forum discussion?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;"
+      "stud_submit_assignment": {
+        "text": "Submit Assignment",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-9": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ArRW0V_EkM0?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_submit_assignment_res": {
+        "text": "Untuk mengumpulkan tugas (**Submit Assignment**):\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/4l4m6tTkLZQ\n- Rujuk buku panduan LiVE Unpad halaman 14.",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-12": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 16.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_forum": {
+        "text": "Forum Discussion",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-13": {
-        "text": "Bagaimana cara menambahkan chat?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;"
+      "stud_forum_res": {
+        "text": "Untuk berpartisipasi dalam diskusi kelas (**Forum Discussion**):\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/ArRW0V_EkM0\n- Rujuk buku panduan LiVE Unpad halaman 16.",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-18": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/TjEoxDhDsao?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_chat": {
+        "text": "Chat",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-20": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 18.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_chat_res": {
+        "text": "Untuk menggunakan fitur **Chat**:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/TjEoxDhDsao\n- Rujuk buku panduan LiVE Unpad halaman 18.",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-25": {
-        "text": "Bagaimana cara mengerjakan kuis di LiVE?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;"
+      "stud_quiz": {
+        "text": "Mengerjakan Kuis",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-29": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/XECgi4NHlpI?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_quiz_res": {
+        "text": "Untuk **Mengerjakan Kuis** di LiVE:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/XECgi4NHlpI\n- Rujuk buku panduan LiVE Unpad halaman 19.",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-32": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 19.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_submit_panopto": {
+        "text": "Submit Video Panopto",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-35": {
-        "text": "Bagaimana cara melakukan submit video panopto ke dalam LiVE",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;"
+      "stud_submit_panopto_res": {
+        "text": "Untuk mengumpulkan tugas video Panopto:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/ZURexVpwWG0\n- Rujuk buku panduan LiVE Unpad halaman 21.",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-39": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ZURexVpwWG0?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_profile": {
+        "text": "Ubah Profil",
+        "is_question": false
       },
-      "TbaGbQ_XiF8c29XMoCXL-43": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 21.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_profile_res": {
+        "text": "Untuk mengubah informasi atau foto profil Anda:\n- Rujuk buku panduan LiVE Unpad halaman 12.",
+        "is_question": false
       },
-      "M396-I_NVxtMAQ198cPF-1": {
-        "text": "Untuk Mahasiswa",
-        "is_question": false,
-        "style": "text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;"
+      "stud_enter_course": {
+        "text": "Masuk Course via student.unpad",
+        "is_question": false
       },
-      "21TcB4FaezBEaQD2r3MP-4": {
-        "text": "Bagaimana cara mengubah profil pada LiVE Unpad?",
-        "is_question": true,
-        "style": "whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;"
-      },
-      "21TcB4FaezBEaQD2r3MP-7": {
-        "text": "Civitas Unpad dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 12.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "nvRxZQnU45fE8vNxoJml-4": {
-        "text": "Bagaimana cara masuk ke dalam Course Unpad melalui student.unpad?",
-        "is_question": true,
-        "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;"
-      },
-      "nvRxZQnU45fE8vNxoJml-7": {
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/4l4m6tTkLZQ?feature=shared",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
-      },
-      "nvRxZQnU45fE8vNxoJml-10": {
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 14.",
-        "is_question": false,
-        "style": "whiteSpace=wrap;html=1;rounded=1;"
+      "stud_enter_course_res": {
+        "text": "Untuk masuk ke dalam Course melalui portal student.unpad:\n- Tonton video tutorial YouTube berikut:\n  https://youtu.be/4l4m6tTkLZQ\n- Rujuk buku panduan LiVE Unpad halaman 14.",
+        "is_question": false
       }
     },
     "edges": [
       {
-        "source": "0M6Q0_m1u-Kp31uyMp7Y-1",
-        "target": "Qw8Cza4JAHxVNatNtK5L-1"
-      },
-      {
-        "source": "Qw8Cza4JAHxVNatNtK5L-1",
-        "target": "TbaGbQ_XiF8c29XMoCXL-1"
+        "source": "TbaGbQ_XiF8c29XMoCXL-2",
+        "target": "stud_submit_assignment"
       },
       {
         "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "TbaGbQ_XiF8c29XMoCXL-4"
+        "target": "stud_forum"
       },
       {
         "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "TbaGbQ_XiF8c29XMoCXL-13"
+        "target": "stud_chat"
       },
       {
         "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "TbaGbQ_XiF8c29XMoCXL-25"
+        "target": "stud_quiz"
       },
       {
         "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "0M6Q0_m1u-Kp31uyMp7Y-1"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-4",
-        "target": "TbaGbQ_XiF8c29XMoCXL-9"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-9",
-        "target": "TbaGbQ_XiF8c29XMoCXL-12"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-13",
-        "target": "TbaGbQ_XiF8c29XMoCXL-18"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-18",
-        "target": "TbaGbQ_XiF8c29XMoCXL-20"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-25",
-        "target": "TbaGbQ_XiF8c29XMoCXL-29"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-29",
-        "target": "TbaGbQ_XiF8c29XMoCXL-32"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-35",
-        "target": "TbaGbQ_XiF8c29XMoCXL-39"
+        "target": "stud_submit_panopto"
       },
       {
         "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "TbaGbQ_XiF8c29XMoCXL-35"
-      },
-      {
-        "source": "TbaGbQ_XiF8c29XMoCXL-39",
-        "target": "TbaGbQ_XiF8c29XMoCXL-43"
+        "target": "stud_profile"
       },
       {
         "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "21TcB4FaezBEaQD2r3MP-4"
+        "target": "stud_enter_course"
       },
       {
-        "source": "21TcB4FaezBEaQD2r3MP-4",
-        "target": "21TcB4FaezBEaQD2r3MP-7"
+        "source": "stud_submit_assignment",
+        "target": "stud_submit_assignment_res"
       },
       {
-        "source": "TbaGbQ_XiF8c29XMoCXL-2",
-        "target": "nvRxZQnU45fE8vNxoJml-4"
+        "source": "stud_forum",
+        "target": "stud_forum_res"
       },
       {
-        "source": "nvRxZQnU45fE8vNxoJml-4",
-        "target": "nvRxZQnU45fE8vNxoJml-7"
+        "source": "stud_chat",
+        "target": "stud_chat_res"
       },
       {
-        "source": "nvRxZQnU45fE8vNxoJml-7",
-        "target": "nvRxZQnU45fE8vNxoJml-10"
-      }
-    ],
-    "questions": [
-      {
-        "id": "0M6Q0_m1u-Kp31uyMp7Y-1",
-        "text": "Bagaimana cara melakukan submit assignment (tugas)?"
+        "source": "stud_quiz",
+        "target": "stud_quiz_res"
       },
       {
-        "id": "TbaGbQ_XiF8c29XMoCXL-2",
-        "text": "Panduan Penggunaan LiVE Untuk mahasiswa?"
+        "source": "stud_submit_panopto",
+        "target": "stud_submit_panopto_res"
       },
       {
-        "id": "TbaGbQ_XiF8c29XMoCXL-4",
-        "text": "Bagaimana cara menambahkan discussion dalam forum discussion?"
+        "source": "stud_profile",
+        "target": "stud_profile_res"
       },
       {
-        "id": "TbaGbQ_XiF8c29XMoCXL-13",
-        "text": "Bagaimana cara menambahkan chat?"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-25",
-        "text": "Bagaimana cara mengerjakan kuis di LiVE?"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-35",
-        "text": "Bagaimana cara melakukan submit video panopto ke dalam LiVE"
-      },
-      {
-        "id": "21TcB4FaezBEaQD2r3MP-4",
-        "text": "Bagaimana cara mengubah profil pada LiVE Unpad?"
-      },
-      {
-        "id": "nvRxZQnU45fE8vNxoJml-4",
-        "text": "Bagaimana cara masuk ke dalam Course Unpad melalui student.unpad?"
-      }
-    ],
-    "answers": [
-      {
-        "id": "Qw8Cza4JAHxVNatNtK5L-1",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/4l4m6tTkLZQ?feature=shared"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-1",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 14."
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-9",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ArRW0V_EkM0?feature=shared"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-12",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 16."
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-18",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/TjEoxDhDsao?feature=shared"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-20",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 18."
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-29",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/XECgi4NHlpI?feature=shared"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-32",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 19."
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-39",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/ZURexVpwWG0?feature=shared"
-      },
-      {
-        "id": "TbaGbQ_XiF8c29XMoCXL-43",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 21."
-      },
-      {
-        "id": "M396-I_NVxtMAQ198cPF-1",
-        "text": "Untuk Mahasiswa"
-      },
-      {
-        "id": "21TcB4FaezBEaQD2r3MP-7",
-        "text": "Civitas Unpad dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 12."
-      },
-      {
-        "id": "nvRxZQnU45fE8vNxoJml-7",
-        "text": "Civitas Unpad dapat mengaksesnya pada akun Youtube berikut: https://youtu.be/4l4m6tTkLZQ?feature=shared"
-      },
-      {
-        "id": "nvRxZQnU45fE8vNxoJml-10",
-        "text": "Selain itu, Civitas Unpad juga dapat mengakses buku panduan di laman live.unpad.ac.id pada bagian \"Informasi Panduan Live\". Panduan terkait hal ini dapat di lihat pada halaman 14."
+        "source": "stud_enter_course",
+        "target": "stud_enter_course_res"
       }
     ]
   }

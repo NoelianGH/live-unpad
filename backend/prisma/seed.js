@@ -45,7 +45,49 @@ async function main() {
     console.log('ℹ️ Admin account already exists');
   }
 
-  // Create user account
+  // Create teacher account
+  const teacherEmail = 'teacher@liveunpad.com';
+  const teacherExists = await prisma.user.findUnique({
+    where: { email: teacherEmail },
+  });
+
+  if (!teacherExists) {
+    const teacherPasswordHash = await bcrypt.hash('teacher123', 10);
+    const teacherUser = await prisma.user.create({
+      data: {
+        name: 'LiVE Unpad Teacher',
+        email: teacherEmail,
+        password: teacherPasswordHash,
+        role: 'teacher',
+      },
+    });
+    console.log(`✅ Teacher account created: ${teacherUser.email} / teacher123`);
+  } else {
+    console.log('ℹ️ Teacher account already exists');
+  }
+
+  // Create student account
+  const studentEmail = 'student@liveunpad.com';
+  const studentExists = await prisma.user.findUnique({
+    where: { email: studentEmail },
+  });
+
+  if (!studentExists) {
+    const studentPasswordHash = await bcrypt.hash('student123', 10);
+    const studentUser = await prisma.user.create({
+      data: {
+        name: 'LiVE Unpad Student',
+        email: studentEmail,
+        password: studentPasswordHash,
+        role: 'student',
+      },
+    });
+    console.log(`✅ Student account created: ${studentUser.email} / student123`);
+  } else {
+    console.log('ℹ️ Student account already exists');
+  }
+
+  // Create user account (legacy)
   const userExists = await prisma.user.findUnique({
     where: { email: userEmail },
   });
@@ -57,7 +99,7 @@ async function main() {
         name: 'LiVE Unpad User',
         email: userEmail,
         password: userPasswordHash,
-        role: 'user',
+        role: 'student', // Default to student now
       },
     });
     console.log(`✅ User account created: ${regularUser.email} / user123`);

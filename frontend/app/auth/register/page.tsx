@@ -36,7 +36,7 @@ export default function RegisterPage() {
 
         {error && <div className="bg-red-50 text-red-600 text-sm p-3 rounded-lg mb-4">{error}</div>}
 
-        <div className="space-y-4">
+        <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
             <input
@@ -68,13 +68,13 @@ export default function RegisterPage() {
             />
           </div>
           <button
-            onClick={handleSubmit}
+            type="submit"
             disabled={loading}
             className="w-full bg-yellow-400 text-gray-900 py-2 rounded-lg text-sm font-medium hover:bg-yellow-500 disabled:opacity-50 transition"
           >
             {loading ? 'Memproses...' : 'Daftar'}
           </button>
-        </div>
+        </form>
 
         <p className="text-center text-sm text-gray-500 mt-4">
           Sudah punya akun?{' '}
