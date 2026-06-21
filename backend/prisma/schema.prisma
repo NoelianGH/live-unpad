@@ -1,0 +1,41 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id          String       @id @default(uuid())
+  name        String       @default("")
+  email       String       @unique
+  password    String
+  role        String       @default("user")
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  submissions Submission[]
+}
+
+model Submission {
+  id           String   @id @default(uuid())
+  tag          String
+  content_text String
+  status       String   @default("pending")
+  submittedBy  String
+  user         User     @relation(fields: [submittedBy], references: [id], onDelete: Cascade)
+  notes        String?  @default("")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model KnowledgeSource {
+  id            String    @id @default(uuid())
+  tag           String    @unique
+  content_text  String
+  last_compiled DateTime?
+  embedding     Float[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
