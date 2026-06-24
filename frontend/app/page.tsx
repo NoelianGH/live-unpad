@@ -19,6 +19,7 @@ export default function Home() {
   const [showPresets, setShowPresets] = useState(false);
   const [activeChoices, setActiveChoices] = useState<Choice[]>([]);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [connectionError, setConnectionError] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   const presets = [
@@ -30,10 +31,18 @@ export default function Home() {
   ];
 
   const loadInitialFlow = async () => {
+    setConnectionError(null);
     try {
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json',
+      };
+      const token = localStorage.getItem('userToken');
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/flow`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({}),
       });
       const data = await res.json();
@@ -41,9 +50,12 @@ export default function Home() {
         setMessages([{ role: 'bot', text: data.message }]);
         setActiveChoices(data.choices || []);
         setActiveCategory(null);
+      } else {
+        throw new Error(data.error || 'Gagal memuat alur chatbot.');
       }
     } catch (err) {
       console.error('Gagal memuat alur chatbot awal:', err);
+      setConnectionError('Gagal memuat alur chatbot. Pastikan server backend Anda berjalan di port 5000.');
     }
   };
 
@@ -52,10 +64,18 @@ export default function Home() {
     setMessages((prev) => [...prev, { role: 'user', text: choice.text }]);
     setLoading(true);
     setActiveChoices([]);
+    setConnectionError(null);
     try {
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json',
+      };
+      const token = localStorage.getItem('userToken');
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/flow`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({
           category: activeCategory,
           node_id: choice.id,
@@ -67,6 +87,8 @@ export default function Home() {
       setActiveChoices(data.choices || []);
       setActiveCategory(data.category);
     } catch (err: any) {
+      console.error(err);
+      setConnectionError('Gagal memproses pilihan. Pastikan koneksi server backend terhubung.');
       setMessages((prev) => [...prev, { role: 'bot', text: err.message || 'Terjadi kesalahan. Coba lagi.' }]);
     } finally {
       setLoading(false);
@@ -77,10 +99,18 @@ export default function Home() {
     if (loading) return;
     setLoading(true);
     setActiveChoices([]);
+    setConnectionError(null);
     try {
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json',
+      };
+      const token = localStorage.getItem('userToken');
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/flow`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({}),
       });
       const data = await res.json();
@@ -88,9 +118,12 @@ export default function Home() {
         setMessages((prev) => [...prev, { role: 'bot', text: data.message }]);
         setActiveChoices(data.choices || []);
         setActiveCategory(null);
+      } else {
+        throw new Error(data.error || 'Terjadi kesalahan.');
       }
     } catch (err) {
       console.error(err);
+      setConnectionError('Gagal memuat ulang menu kategori. Silakan coba lagi.');
     } finally {
       setLoading(false);
     }
@@ -248,6 +281,23 @@ export default function Home() {
               <div className="bg-white border border-gray-200 px-4 py-2 rounded-2xl rounded-bl-sm text-sm text-gray-400 font-medium animate-pulse">
                 Mengetik...
               </div>
+            </div>
+          )}
+
+          {/* Connection Error Banner */}
+          {connectionError && (
+            <div className="bg-red-50 border border-red-200 text-red-800 rounded-2xl p-4 shadow-sm max-w-xl self-start space-y-2.5">
+              <div className="flex items-center gap-2">
+                <span className="text-red-500 font-bold">⚠️</span>
+                <p className="text-xs font-semibold uppercase tracking-wider text-red-500">Masalah Koneksi</p>
+              </div>
+              <p className="text-xs leading-relaxed">{connectionError}</p>
+              <button
+                onClick={loadInitialFlow}
+                className="bg-red-600 hover:bg-red-700 text-white text-xs px-3.5 py-2 rounded-xl transition duration-150 font-medium shadow-sm active:scale-[0.98]"
+              >
+                Coba Hubungkan Kembali
+              </button>
             </div>
           )}
 

@@ -5,7 +5,6 @@ export const connectDB = async () => {
     await prisma.$connect();
     console.log('✅ PostgreSQL (Neon) terhubung via Prisma!');
   } catch (err) {
-    console.error('❌ Koneksi database gagal:', err.message);
-    process.exit(1);
+    console.error('❌ Koneksi database gagal pada startup (server akan tetap berjalan):', err.message);
   }
 };

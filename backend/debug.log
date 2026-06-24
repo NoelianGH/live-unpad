@@ -76,3 +76,81 @@ getUserRoleFromRequest: User in DB: {"role":"teacher"}
 getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
 getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782034474,"exp":1782639274}
 getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: No auth header
+getUserRoleFromRequest: No auth header
+getUserRoleFromRequest: No auth header
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"38a0b4ea-632c-48ea-9de4-14394fccdc71","role":"student","iat":1782033400,"exp":1782638200}
+getUserRoleFromRequest: User in DB: {"role":"student"}
+getUserRoleFromRequest: No auth header
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782264810,"exp":1782869610}
+getUserRoleFromRequest: Error: 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error occurred during query execution:
+ConnectorError(ConnectorError { user_facing_error: None, kind: QueryError(PostgresError { code: "57P01", message: "terminating connection due to administrator command", severity: "FATAL", detail: None, column: None, hint: None }), transient: false })
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782265753,"exp":1782870553}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782265753,"exp":1782870553}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782265753,"exp":1782870553}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782265753,"exp":1782870553}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782265753,"exp":1782870553}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782265753,"exp":1782870553}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782266252,"exp":1782871052}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782266252,"exp":1782871052}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782266252,"exp":1782871052}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782266252,"exp":1782871052}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782266252,"exp":1782871052}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"9549500a-4ba1-419b-88fe-826679f67bb0","role":"admin","iat":1782266252,"exp":1782871052}
+getUserRoleFromRequest: User in DB: {"role":"admin"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
+getUserRoleFromRequest: Token found: eyJhbGciOiJIUzI...
+getUserRoleFromRequest: Decoded: {"userId":"d28b1058-1e75-49e1-862e-34f2907129e2","role":"teacher","iat":1782266380,"exp":1782871180}
+getUserRoleFromRequest: User in DB: {"role":"teacher"}
