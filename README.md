@@ -4,6 +4,25 @@ A fullstack application consisting of a **Next.js frontend** and an **Express/Pr
 
 ---
 
+## UI Screenshots
+
+### 🔐 Login Page
+![Login Page](ui/ui-login.png)
+
+### 🤖 Chatbot (Public Mode)
+![Chatbot](ui/ui-chatbot.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](ui/ui-admin-dashboard.png)
+
+### 📚 Knowledge Base
+![Knowledge Base](ui/ui-knowledge-base.png)
+
+### 👥 User Management
+![User Management](ui/ui-user-management.png)
+
+---
+
 ## Prerequisities
 
 Make sure you have the following installed on your local machine:
